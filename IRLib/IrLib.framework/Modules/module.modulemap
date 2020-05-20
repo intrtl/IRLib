@@ -1,0 +1,6 @@
+framework module IrLib {
+  umbrella header "IrLib.h"
+
+  export *
+  module * { export * }
+}
