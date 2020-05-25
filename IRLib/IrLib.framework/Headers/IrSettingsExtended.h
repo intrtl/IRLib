@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface IrSettingsExtended : NSObject
 @property int showQualityInfo;
 @property long setSceneType;
-@property int userArKit;
 @property int showOnlyUserBrands;
 @property int showReportPrepearingInfo;
 @property int showShelvesLines;
