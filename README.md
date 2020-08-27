@@ -16,7 +16,9 @@
     pod 'IRLib'
   end
 ```
-5. Skip this step you haven't embedded the framework previously without Cocoapods.
+4. Skip this step you haven't embedded the framework previously without Cocoapods.
 Remove `IRLib.framework` from embedded libraries (xcode project settings -> 'General' tab), Embedded Frameworks and Link binary with libraries sections (xcode project settings -> 'Build Phases' tab). 
 
-4. Run `pod install` via terminal in directory with your project.
+5. Run `pod install` via terminal in directory with your project.
+
+6. To update version of previously installed framework run `pod update IRLib` via terminal in directory with your project.
