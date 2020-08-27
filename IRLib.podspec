@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "IRLib"
-  spec.version      = "1.0.171"
+  spec.version      = "1.0.172"
   spec.summary      = "Framework for Intelligence Retail functionality integration"
   spec.static_framework = true;
   spec.description  = <<-DESC
@@ -19,5 +19,5 @@ Pod::Spec.new do |spec|
   spec.dependency "Charts", "~> 3.2.2"
   spec.dependency "OpenCV2", "~> 3.4.6"
   spec.dependency "AppCenter", "~> 1.2.0"
-  spec.dependency "IrLibSwift", "~> 1.0.4"
+  spec.dependency "IrLibSwift", "~> 1.0.7"
 end

@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "IrButtonsState.h"
 #import "IRSyncInfoPresentableEntity.h"
 #import "IrSettings.h"
 #import "IrLastVisit.h"
 #import "ContentStruct.h"
+
+@class SelectStoreTableViewController;
 
 @protocol IrCoreDelegate <NSObject>
 @optional
@@ -31,7 +32,13 @@
 -(void)didUpdateSyncInfoWithOfflineMessage:(NSString *)message;
 @end
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface IrCore : NSObject
+
+@property (nonatomic, copy, nullable) void(^updateAnketHandler)(void);
+@property (nonatomic, copy, nullable) void(^authErrorHandler)(void);
+
 @property (weak, nonatomic) id<IrCoreDelegate> delegate;
 FOUNDATION_EXPORT int const IR_ERROR_BUSY;
 FOUNDATION_EXPORT int const IR_RESULT_OK;
@@ -64,12 +71,12 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(id)init:(id)parent isSeparated:(bool)isSeparated;
 -(void)configure;
 -(void)finishVisit;
--(void)updateMainButtons;
--(IrButtonsState *)getButtons;
--(void)initAndShowCameraViewController;
+-(void)initAndShowCameraViewControllerWithTaskId:(NSString * _Nullable)taskId;
 -(void)panoramaProcess;
--(void)showCameraViewController;
--(void)showCameraViewControllerWithParent:(id)parent;
+-(void)showCameraViewControllerWithTaskId:(NSString * _Nullable)taskId;
+-(void)showCameraViewControllerWithParent:(id)parent taskId:(NSString * _Nullable)taskId;
+- (BOOL)isAnketAvailable;
+- (UIViewController  * _Nullable)anketViewController;
 -(void)showReportsViewController;
 -(void)showMatrixAssortmentViewController;
 -(void)showMatrixAssortmentViewControllerWithParent:(id)parent;
@@ -80,8 +87,6 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(void)closeVisit;
 -(void)selectStore;
 -(void)updateMatrix;
--(void)showCameraWaiting;
--(void)hideCameraWaiting;
 - (void)initAsLib;
 -(void)initAsApp;
 -(void)initTimers;
@@ -105,6 +110,7 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(void)setSettings:(IrSettings *)settings;
 -(IrSettings *)getSettings;
 -(bool)isTokenValid;
+- (BOOL)shouldReauthorizeWithUsername:(NSString *)userName externalUserId:(NSString * _Nullable)externalUserId;
 -(bool)isShowInstructions;
 -(bool)isDebug;
 -(void)setIsDebug:(bool)value;
@@ -174,10 +180,22 @@ isForceStart:(BOOL)isForceStart;
 -(void)destroy;
 -(bool)getAutoPhotosTestEnabled;
 -(void)setAutoPhotosTestEnabled:(bool)value;
--(void)closeIncorrectScenesAndResetAssortmentRequestCnt;
+-(void)closeIncorrectScenes;
 -(void)fetchPlanIfNeeded;
 -(void)fetchVisitsHistory;
 -(IRSyncInfoPresentableEntity *)syncInfo;
 - (void)startSync;
 
+- (BOOL)isInternetAvailable;
+- (void)setStartedFromDeeplink;
+- (nullable UIViewController *)configuredCameraControllerForStoreId:(NSString *)external_store_id
+                                                    externalVisitId:(NSString *)external_visit_id
+                                                       isForceStart:(BOOL)isForceStart
+                                               backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
+                                                              error:(NSError **)error;
+- (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId;
+- (void)sendCurrentVisit;
+
 @end
+
+NS_ASSUME_NONNULL_END
