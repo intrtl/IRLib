@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = "IRLib/IrLib.framework"
   spec.frameworks = "CoreMotion", "UserNotifications"
   spec.dependency "Realm", "~> 4.3.0"
-  spec.dependency "Charts", "~> 3.2.2"
+  spec.dependency "Charts", "~> 3.5.0"
   spec.dependency "OpenCV2", "~> 3.4.6"
   spec.dependency "AppCenter", "~> 1.2.0"
   spec.dependency "IrLibSwift", "~> 1.0.7"
