@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *title;
 /// Дата и время последней синхронизации
 @property NSString *lastSyncTime;
+/// Флаг отображающий была ли когда-либо сделана синхронизация
+@property BOOL isEverHappened;
 @end
 
 NS_ASSUME_NONNULL_END

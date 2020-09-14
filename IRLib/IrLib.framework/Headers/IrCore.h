@@ -181,6 +181,7 @@ isForceStart:(BOOL)isForceStart;
 -(bool)getAutoPhotosTestEnabled;
 -(void)setAutoPhotosTestEnabled:(bool)value;
 -(void)closeIncorrectScenes;
+-(void)fetchAppSettings;
 -(void)fetchPlanIfNeeded;
 -(void)fetchVisitsHistory;
 -(IRSyncInfoPresentableEntity *)syncInfo;
@@ -195,6 +196,7 @@ isForceStart:(BOOL)isForceStart;
                                                               error:(NSError **)error;
 - (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId;
 - (void)sendCurrentVisit;
+- (BOOL)shouldSyncManually;
 
 @end
 
