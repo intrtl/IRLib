@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *lastSyncTime;
 /// Флаг отображающий была ли когда-либо сделана синхронизация
 @property BOOL isEverHappened;
+/// Была ли ошибка при получении справочников
+@property BOOL hasError;
 @end
 
 NS_ASSUME_NONNULL_END

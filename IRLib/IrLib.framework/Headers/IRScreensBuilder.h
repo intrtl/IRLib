@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIViewController *)selectStoreViewController;
 - (UIViewController *)anketViewControllerWithCloseVisitHandler:(void (^)(BOOL))closeVisitHandler;
 - (UIViewController *)assortmentReportViewController;
-- (UIViewController *)matrixViewController;
+- (UIViewController *)matrixViewControllerForStoreId:(NSInteger)storeId shouldReloadDataAfterAppear:(BOOL)shouldReloadData;
 - (UIViewController *)cameraViewControllerWithIrCore:(IrCore *)irCore taskId:(NSString * _Nullable)taskId backTapHandler:(void(^)(void))backTapHandler;
 
 @end
