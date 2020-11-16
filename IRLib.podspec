@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "IRLib"
-  spec.version      = "1.0.176"
+  spec.version      = "1.177.0"
   spec.summary      = "Framework for Intelligence Retail functionality integration"
   spec.static_framework = true;
   spec.description  = <<-DESC
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   spec.public_header_files = "IRLib/IrLib.framework/Headers/*.h"
   spec.ios.vendored_frameworks = "IRLib/IrLib.framework"
   spec.frameworks = "CoreMotion", "UserNotifications"
-  spec.dependency "Realm", "~> 4.3.0"
+  spec.dependency "Realm", "~> 5.5.0"
   spec.dependency "Charts", "~> 3.5.0"
   spec.dependency "OpenCV2", "~> 3.4.6"
   spec.dependency "AppCenter", "~> 1.2.0"
-  spec.dependency "IrLibSwift", "~> 1.0.10.1"
+  spec.dependency "IrLibSwift", "~> 1.13.0"
 end

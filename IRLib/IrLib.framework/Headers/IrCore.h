@@ -15,6 +15,8 @@
 #import "ContentStruct.h"
 
 @class SelectStoreTableViewController;
+@protocol IRStoreService;
+@protocol IRDataManagerProtocol;
 
 @protocol IrCoreDelegate <NSObject>
 @optional
@@ -69,6 +71,7 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 
 -(id)init:(id)parent;
 -(id)init:(id)parent isSeparated:(bool)isSeparated;
+-(instancetype)init:(id)parent isSeparated:(bool)isSeparated dataManager:(id<IRDataManagerProtocol>)dataManager storeService:(id<IRStoreService>)storeService;
 -(void)configure;
 -(void)finishVisit;
 -(void)initAndShowCameraViewControllerWithTaskId:(NSString * _Nullable)taskId;
@@ -176,7 +179,6 @@ isForceStart:(BOOL)isForceStart;
 -(long)getCurrentStoreId;
 -(void)loadContentWithCallback:(void (^)(bool res))callback;
 -(bool)isHaveContent;
--(void)testCheckString;
 -(void)destroy;
 -(bool)getAutoPhotosTestEnabled;
 -(void)setAutoPhotosTestEnabled:(bool)value;
@@ -196,6 +198,8 @@ isForceStart:(BOOL)isForceStart;
 - (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId;
 - (void)sendCurrentVisit;
 - (BOOL)shouldSyncManually;
+- (void)showTechSupportScreen;
+- (void)updateDeviceToken:(NSData *)deviceToken;
 
 @end
 
