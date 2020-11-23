@@ -190,11 +190,11 @@ isForceStart:(BOOL)isForceStart;
 
 - (BOOL)isInternetAvailable;
 - (void)setStartedFromDeeplink;
-- (nullable UIViewController *)configuredCameraControllerForStoreId:(NSString *)external_store_id
-                                                    externalVisitId:(NSString *)external_visit_id
-                                                       isForceStart:(BOOL)isForceStart
-                                               backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
-                                                              error:(NSError **)error;
+- (nullable UIViewController *)configuredCameraControllerForExternalStoreId:(NSString *)external_store_id
+                                                            externalVisitId:(NSString *)external_visit_id
+                                                               isForceStart:(BOOL)isForceStart
+                                                       backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
+                                                                      error:(NSError **)error;
 - (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId;
 - (void)sendCurrentVisit;
 - (BOOL)shouldSyncManually;
