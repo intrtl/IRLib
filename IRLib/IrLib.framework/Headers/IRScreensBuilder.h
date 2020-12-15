@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithIrCore:(IrCore *)irCore;
 
+- (UIViewController *)summaryReportsViewControllerWithExternalVisitId:(NSString *)externalVisitId;
 - (UIViewController *)summaryReportsViewController;
 - (UIViewController *)selectStoreViewController;
 - (UIViewController *)anketViewControllerWithCloseVisitHandler:(void (^)(BOOL))closeVisitHandler;

@@ -189,6 +189,7 @@ isForceStart:(BOOL)isForceStart;
 - (void)startSync;
 
 - (BOOL)isInternetAvailable;
+- (BOOL)isStartedFromDeeplink;
 - (void)setStartedFromDeeplink;
 - (nullable UIViewController *)configuredCameraControllerForExternalStoreId:(NSString *)external_store_id
                                                             externalVisitId:(NSString *)external_visit_id
@@ -200,6 +201,7 @@ isForceStart:(BOOL)isForceStart;
 - (BOOL)shouldSyncManually;
 - (void)showTechSupportScreen;
 - (void)updateDeviceToken:(NSData *)deviceToken;
+- (void)updateGetPhotoResultIntervals:(NSArray *)intervals;
 
 @end
 
