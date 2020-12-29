@@ -10,6 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger, IRSyncError) {
+    IRSyncErrorNone = 0,
+    IRSyncErrorServer = 1,
+    IRSyncErrorConnection = 2,
+    IRSyncErrorUnknown = 3
+};
+
 @interface IRSyncInfoPresentableEntity : NSObject
 /// Прогресс синхронизации
 @property float progress;
@@ -19,8 +26,20 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *lastSyncTime;
 /// Флаг отображающий была ли когда-либо сделана синхронизация
 @property BOOL isEverHappened;
-/// Была ли ошибка при получении справочников
-@property BOOL hasError;
+/// Ошибка при синхронизации
+@property (assign, nonatomic) IRSyncError error;
+/// Закончена ли загрузка справочников (началась отправка фото / визитов / сцен и тп)
+@property BOOL isCatalogsDownloadFinish;
+/// Общее количество готовых к отправке, отправленных и распознанных фото.
+@property long totalPhotosCount;
+/// Количество отправленных фото.
+@property long sentPhotosCount;
+/// Количество распознанных фото.
+@property long recognizedPhotosCount;
+/// Количество нераспозанных визитов.
+@property long notRecognizedVisitsCount;
+
+- (BOOL)isPhotoSendCompleted;
 @end
 
 NS_ASSUME_NONNULL_END

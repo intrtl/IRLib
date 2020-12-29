@@ -31,7 +31,7 @@
 -(void)updateContent;
 -(void)showSettingsErrorAlert;
 -(void)didUpdateSyncInfo;
--(void)didUpdateSyncInfoWithOfflineMessage:(NSString *)message;
+-(void)didReceiveSyncInfoError:(IRSyncError)error;
 @end
 
 NS_ASSUME_NONNULL_BEGIN
@@ -187,6 +187,7 @@ isForceStart:(BOOL)isForceStart;
 -(void)fetchPlanIfNeeded;
 -(IRSyncInfoPresentableEntity *)syncInfo;
 - (void)startSync;
+- (void)startForcePhotoSync;
 
 - (BOOL)isInternetAvailable;
 - (BOOL)isStartedFromDeeplink;
@@ -197,11 +198,31 @@ isForceStart:(BOOL)isForceStart;
                                                        backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
                                                                       error:(NSError **)error;
 - (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId;
-- (void)sendCurrentVisit;
 - (BOOL)shouldSyncManually;
 - (void)showTechSupportScreen;
 - (void)updateDeviceToken:(NSData *)deviceToken;
 - (void)updateGetPhotoResultIntervals:(NSArray *)intervals;
+
+/// Запуск анализа фото
+/// @param photoId идентификатор фото
+/// @return Возвращает флаг, готово ли фото к отправке или нужен аппрув
+- (BOOL)detectErrorsForPhotoWithId:(NSString *)photoId;
+
+/// Отправка фото
+/// @param photoId идентификатор фото
+/// @param updateHandler коллбэк, позволяющий отследить изменение статуса фото
+- (void)sendPhotoWithId:(NSString *)photoId updateHandler:(void(^)(NSError * _Nullable))updateHandler;
+
+/// Отправка информации о сцене.
+/// Метод не делает моментальный запрос на отправку сцены. Он добавляет операцию в очередь отправки. Метод будет выполнен, когда успешно завершится запрос отправки у любой из фотографий для этой сцены.
+/// @param sceneId идентификатор сцены
+- (void)sendSceneAttributesForSceneWithId:(NSString *)sceneId;
+
+- (void)restartSendPhotoSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
+
+- (void)deletePhotoWithId:(NSString *)photoId;
+
+- (void)deletePhotosForSceneWithId:(NSString *)sceneId;
 
 @end
 
