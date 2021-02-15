@@ -23,7 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property int maxPhotoWidth;
 @property int maxResolution;
 @property int maxVisits;
-@property int logOn;
 @property bool isInfinityBackground;
 @property bool isAutoPhotoTestEnabled;
 

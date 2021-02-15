@@ -13,6 +13,7 @@
 #import "IrSettings.h"
 #import "IrLastVisit.h"
 #import "ContentStruct.h"
+#import <IrLibSwift/IrLibSwift-Swift.h>
 
 @class SelectStoreTableViewController;
 @protocol IRStoreService;
@@ -223,6 +224,10 @@ isForceStart:(BOOL)isForceStart;
 - (void)deletePhotoWithId:(NSString *)photoId;
 
 - (void)deletePhotosForSceneWithId:(NSString *)sceneId;
+
+- (nullable Visit *)previousVisitWithExternalId:(NSString *)externalId error:(NSError **)error;
+
+- (void)restartSendSceneAttributesSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
 
 @end
 
