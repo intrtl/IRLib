@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "IRSyncInfoPresentableEntity.h"
-#import "IrSettings.h"
+#import "IRUserDefinedSettings.h"
 #import "IrLastVisit.h"
 #import "ContentStruct.h"
 #import <IrLibSwift/IrLibSwift-Swift.h>
@@ -66,6 +66,12 @@ FOUNDATION_EXPORT int const IR_ERROR_NOTRESPONSE;
 FOUNDATION_EXPORT int const IR_ERROR_SERVER;
 FOUNDATION_EXPORT int const IR_RESULT_SHOW_SERVICES;
 FOUNDATION_EXPORT int const IR_RESULT_LOGIN_APP_SERVER;
+/// Передан ИД портала, но не включен мультипортальный режим.
+FOUNDATION_EXPORT int const IR_ERROR_NOT_MULTIPORTAL_MODE;
+/// В базе отсутствует такой портал.
+FOUNDATION_EXPORT int const IR_ERROR_PORTAL_INCORRECT;
+/// Был передан пустой ИД портала в мультипортальном режиме.
+FOUNDATION_EXPORT int const IR_ERROR_EMPTY_PORTAL;
 
 FOUNDATION_EXPORT int const MODE_PANO_NONE;
 FOUNDATION_EXPORT int const MODE_PANO_70;
@@ -110,8 +116,8 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
                password:(NSString*)password
            withCallback:(void (^)(int resultCode))callback;
 
--(void)setSettings:(IrSettings *)settings;
--(IrSettings *)getSettings;
+-(void)setSettings:(IRUserDefinedSettings *)settings;
+-(IRUserDefinedSettings *)getSettings;
 -(bool)isTokenValid;
 - (BOOL)shouldReauthorizeWithUsername:(NSString *)userName externalUserId:(NSString * _Nullable)externalUserId;
 -(bool)isShowInstructions;
@@ -132,7 +138,18 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 external_user_id:(NSString*)external_user_id_
  notification:(NSString*)notificationName
   isForceInit:(BOOL)isForceInit
+   crashLimit:(int)crashLimit
+isMultiportal:(BOOL)isMultiportal;
+
+-(long)initIr:(NSString*)user_name_
+     password:(NSString*)user_password_
+   guestToken:(NSString *)guestToken
+external_user_id:(NSString*)external_user_id_
+ notification:(NSString*)notificationName
+  isForceInit:(BOOL)isForceInit
    crashLimit:(int)crashLimit;
+
+- (long)setPortal:(NSString *)portalId;
 
 -(long)start:(NSString*)external_store_id
 external_visit_id:(NSString*)external_visit_id;
@@ -225,7 +242,7 @@ isForceStart:(BOOL)isForceStart;
 
 - (void)deletePhotosForSceneWithId:(NSString *)sceneId;
 
-- (nullable Visit *)previousVisitWithExternalId:(NSString *)externalId error:(NSError **)error;
+- (void)downloadPreviousVisitWithExternalId:(NSString *)externalId error:(NSError **)error;
 
 - (void)restartSendSceneAttributesSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
 

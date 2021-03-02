@@ -24,6 +24,62 @@
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
  guestToken:(NSString *)guestToken
+notification:(NSString*)notificationName
+isMultiportal:(BOOL)isMultiportal;
+
++(long)init:(NSString*)user_name_
+   password:(NSString*)user_password_
+ guestToken:(NSString *)guestToken
+notification:(NSString*)notificationName
+isForceInit:(BOOL)isForceInit
+ crashLimit:(int)crashLimit
+isMultiportal:(BOOL)isMultiportal;
+
++(long)init:(NSString*)user_name_
+   password:(NSString*)user_password_
+ guestToken:(NSString *)guestToken
+external_user_id:(NSString*)external_user_id_
+notification:(NSString*)notificationName
+isMultiportal:(BOOL)isMultiportal;
+
++(long)init:(NSString*)user_name_
+   password:(NSString*)user_password_
+ guestToken:(NSString *)guestToken
+external_user_id:(NSString*)external_user_id_
+notification:(NSString*)notificationName
+isForceInit:(BOOL)isForceInit
+ crashLimit:(int)crashLimit
+isMultiportal:(BOOL)isMultiportal;
+
++(long)initLib:(NSString*)user_name_
+      password:(NSString*)user_password_
+    guestToken:(NSString *)guestToken
+  notification:(NSString*)notificationName;
+
++(long)initLib:(NSString*)user_name_
+      password:(NSString*)user_password_
+    guestToken:(NSString *)guestToken
+  notification:(NSString*)notificationName
+   isForceInit:(BOOL)isForceInit
+    crashLimit:(int)crashLimit;
+
++(long)initLib:(NSString*)user_name_
+      password:(NSString*)user_password_
+    guestToken:(NSString *)guestToken
+external_user_id:(NSString*)external_user_id_
+  notification:(NSString*)notificationName;
+
++(long)initLib:(NSString*)user_name_
+      password:(NSString*)user_password_
+    guestToken:(NSString *)guestToken
+external_user_id:(NSString*)external_user_id_
+  notification:(NSString*)notificationName
+   isForceInit:(BOOL)isForceInit
+    crashLimit:(int)crashLimit;
+
++(long)init:(NSString*)user_name_
+   password:(NSString*)user_password_
+ guestToken:(NSString *)guestToken
 notification:(NSString*)notificationName;
 
 +(long)init:(NSString*)user_name_
@@ -76,24 +132,35 @@ isForceStart:(BOOL)isForceStart;
 +(int)libVersion;
 +(void)useInfinityBg:(BOOL)use;
 +(void)initAnalytics;
+
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
-  notification:(NSString*)notificationName;
+  notification:(NSString*)notificationName
+ isMultiportal:(BOOL)isMultiportal;
+
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
   notification:(NSString*)notificationName
    isForceInit:(BOOL)isForceInit
-    crashLimit:(int)crashLimit;
+    crashLimit:(int)crashLimit
+ isMultiportal:(BOOL)isMultiportal;
+
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
 external_user_id:(NSString*)external_user_id_
-  notification:(NSString*)notificationName;
+  notification:(NSString*)notificationName
+ isMultiportal:(BOOL)isMultiportal;
+
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
 external_user_id:(NSString*)external_user_id_
   notification:(NSString*)notificationName
    isForceInit:(BOOL)isForceInit
-    crashLimit:(int)crashLimit;
+    crashLimit:(int)crashLimit
+ isMultiportal:(BOOL)isMultiportal;
+
++ (long)setPortal:(nonnull NSString *)portalId;
+
 +(void)doDebugCommand;
 +(void)setIsDebug:(bool)value;
 +(void)setAutoPhotosTestEnabled:(bool)value;
