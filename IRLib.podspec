@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "IRLib"
-  spec.version      = "1.183.0"
+  spec.version      = "1.183.1"
   spec.summary      = "Framework for Intelligence Retail functionality integration"
   spec.static_framework = true;
   spec.description  = <<-DESC
