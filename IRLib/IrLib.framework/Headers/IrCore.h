@@ -159,6 +159,7 @@ isForceStart:(BOOL)isForceStart;
 -(long)showSummaryReport:(NSString *)external_visit_id;
 -(NSArray *)reports;
 -(NSDictionary *)reports:(NSString *)external_visit_id;
+-(NSDictionary *)reports:(NSString *)external_visit_id internalTaskId:(NSString * _Nullable)internalTaskId;
 -(NSDictionary *)reports:(NSString *)external_visit_id
                  isLogOn:(BOOL)isLogOn;
 -(long)syncData;
@@ -210,12 +211,13 @@ isForceStart:(BOOL)isForceStart;
 - (BOOL)isInternetAvailable;
 - (BOOL)isStartedFromDeeplink;
 - (void)setStartedFromDeeplink;
-- (nullable UIViewController *)configuredCameraControllerForExternalStoreId:(NSString *)external_store_id
-                                                            externalVisitId:(NSString *)external_visit_id
-                                                               isForceStart:(BOOL)isForceStart
-                                                       backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
-                                                                      error:(NSError **)error;
-- (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId;
+- (nullable UIViewController *)configuredVisitStartControllerForExternalStoreId:(NSString *)external_store_id
+                                                                externalVisitId:(NSString *)external_visit_id
+                                                                         taskId:(NSString * _Nullable)taskId
+                                                                   isForceStart:(BOOL)isForceStart
+                                                           backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
+                                                                          error:(NSError **)error;
+- (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId internalTaskId:(NSString * _Nullable)internalTaskId;
 - (BOOL)shouldSyncManually;
 - (void)showTechSupportScreen;
 - (void)updateDeviceToken:(NSData *)deviceToken;

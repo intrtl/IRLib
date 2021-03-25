@@ -17,13 +17,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithIrCore:(IrCore *)irCore;
 
-- (UIViewController *)summaryReportsViewControllerWithExternalVisitId:(NSString *)externalVisitId;
+- (UIViewController *)summaryReportsViewControllerWithExternalVisitId:(NSString *)externalVisitId internalTaskId:(NSString * _Nullable)internalTaskId;
 - (UIViewController *)summaryReportsViewController;
 - (UIViewController *)selectStoreViewController;
 - (UIViewController *)anketViewControllerWithCloseVisitHandler:(void (^)(BOOL))closeVisitHandler;
 - (UIViewController *)assortmentReportViewController;
 - (UIViewController *)matrixViewControllerForStoreId:(NSInteger)storeId shouldReloadDataAfterAppear:(BOOL)shouldReloadData;
 - (UIViewController *)cameraViewControllerWithIrCore:(IrCore *)irCore taskId:(NSString * _Nullable)taskId backTapHandler:(void(^)(void))backTapHandler;
+- (UIViewController *)storeDetailViewControllerWithIrCore:(IrCore *)irCore storeId:(NSInteger)storeId;
+- (UIViewController *)taskDetailViewControllerWithIrCore:(IrCore *)irCore internalTaskId:(NSString * _Nullable)internalTaskId;
 
 @end
 
