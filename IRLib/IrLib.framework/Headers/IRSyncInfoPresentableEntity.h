@@ -38,6 +38,10 @@ typedef NS_ENUM(NSUInteger, IRSyncError) {
 @property long recognizedPhotosCount;
 /// Количество нераспозанных визитов.
 @property long notRecognizedVisitsCount;
+/// Количество распозанных визитов.
+@property long recognizedVisitsCount;
+/// Количество распозанных визитов.
+@property long totalVisitsCount;
 
 - (BOOL)isPhotoSendCompleted;
 @end

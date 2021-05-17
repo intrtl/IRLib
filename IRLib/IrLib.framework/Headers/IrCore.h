@@ -13,11 +13,18 @@
 #import "IRUserDefinedSettings.h"
 #import "IrLastVisit.h"
 #import "ContentStruct.h"
+#import "TechSupportPresenter.h"
 #import <IrLibSwift/IrLibSwift-Swift.h>
 
 @class SelectStoreTableViewController;
+@class Api;
+@class CatalogNetworkService;
+@class IRLibServicesBuilder;
 @protocol IRStoreService;
 @protocol IRDataManagerProtocol;
+@protocol SyncService;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol IrCoreDelegate <NSObject>
 @optional
@@ -28,16 +35,15 @@
 -(void)showLogo:(UIImage *)logo;
 -(void)showOnline;
 -(void)showOffline;
--(void)showLogin;
 -(void)updateContent;
 -(void)showSettingsErrorAlert;
 -(void)didUpdateSyncInfo;
 -(void)didReceiveSyncInfoError:(IRSyncError)error;
 @end
 
-NS_ASSUME_NONNULL_BEGIN
+@interface IrCore : NSObject <TechSupportPresenter>
 
-@interface IrCore : NSObject
+@property (strong, nonatomic) Api *api;
 
 @property (nonatomic, copy, nullable) void(^updateAnketHandler)(void);
 @property (nonatomic, copy, nullable) void(^authErrorHandler)(void);
@@ -76,9 +82,30 @@ FOUNDATION_EXPORT int const IR_ERROR_EMPTY_PORTAL;
 FOUNDATION_EXPORT int const MODE_PANO_NONE;
 FOUNDATION_EXPORT int const MODE_PANO_70;
 
--(id)init:(id)parent;
--(id)init:(id)parent isSeparated:(bool)isSeparated;
--(instancetype)init:(id)parent isSeparated:(bool)isSeparated dataManager:(id<IRDataManagerProtocol>)dataManager storeService:(id<IRStoreService>)storeService;
+#pragma mark - Initialization
+
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)init:(id)parent
+        isSeparated:(bool)isSeparated
+        storeService:(id<IRStoreService>)storeService
+                api:(Api *)api
+        syncService:(id<SyncService>)syncService
+      catalogService:(CatalogNetworkService *)catalogService
+     servicesBuilder:(IRLibServicesBuilder *)servicesBuilder;
+
+- (instancetype)init:(id)parent
+         isSeparated:(bool)isSeparated
+        dataManager:(id<IRDataManagerProtocol>)dataManager
+       storeService:(id<IRStoreService>)storeService
+                api:(Api *)api
+         syncService:(id<SyncService>)syncService
+      catalogService:(CatalogNetworkService *)catalogService
+     servicesBuilder:(IRLibServicesBuilder *)servicesBuilder;
+
+#pragma mark - Instance methods
+
 -(void)configure;
 -(void)finishVisit;
 -(void)initAndShowCameraViewControllerWithTaskId:(NSString * _Nullable)taskId;
@@ -86,14 +113,13 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(void)showCameraViewControllerWithTaskId:(NSString * _Nullable)taskId;
 -(void)showCameraViewControllerWithParent:(id)parent taskId:(NSString * _Nullable)taskId;
 - (BOOL)isAnketAvailable;
-- (UIViewController  * _Nullable)anketViewController;
 -(void)showReportsViewController;
 -(void)showMatrixAssortmentViewController;
 -(void)showMatrixAssortmentViewControllerWithParent:(id)parent;
 -(void)showLackOfAssortmentViewController;
--(void)showFormsViewController;
+-(void)showFormsViewControllerForStoreId:(NSInteger)storeId
+                        showOnlyNewAnket:(BOOL)shouldShowOnlyNewAnket;
 -(void)showFormsEditViewController;
--(void)showMatrixViewController;
 -(void)closeVisit;
 -(void)selectStore;
 - (void)initAsLib;
@@ -106,7 +132,7 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
                 password:(NSString *)password
               guestToken:(NSString *)guestToken
       isShowDebugConsole:(bool)isShowDebugConsole
-              externalId:(NSString *)externalId
+              externalId:(nullable NSString *)externalId
                  isDebug:(bool)isDebug
             withCallback:(void (^)(int errorCode, NSString *ip, NSString *ipName, NSArray *services))callback;
 
@@ -247,6 +273,8 @@ isForceStart:(BOOL)isForceStart;
 - (void)downloadPreviousVisitWithExternalId:(NSString *)externalId error:(NSError **)error;
 
 - (void)restartSendSceneAttributesSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
+
+- (void)logScreenTimeEventWithId:(NSString *)id name:(NSString *)name duration:(long)duration;
 
 @end
 
