@@ -28,10 +28,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol IrCoreDelegate <NSObject>
 @optional
--(void)updateMainMenuButtons;
--(void)showFormViewController;
--(void)showInstructions;
--(void)showHints;
 -(void)showLogo:(UIImage *)logo;
 -(void)showOnline;
 -(void)showOffline;
@@ -78,6 +74,9 @@ FOUNDATION_EXPORT int const IR_ERROR_NOT_MULTIPORTAL_MODE;
 FOUNDATION_EXPORT int const IR_ERROR_PORTAL_INCORRECT;
 /// Был передан пустой ИД портала в мультипортальном режиме.
 FOUNDATION_EXPORT int const IR_ERROR_EMPTY_PORTAL;
+
+FOUNDATION_EXPORT int const AILET_VISIT_ERROR_CANT_FINISH;
+FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
 
 FOUNDATION_EXPORT int const MODE_PANO_NONE;
 FOUNDATION_EXPORT int const MODE_PANO_70;
@@ -146,7 +145,6 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(IRUserDefinedSettings *)getSettings;
 -(bool)isTokenValid;
 - (BOOL)shouldReauthorizeWithUsername:(NSString *)userName externalUserId:(NSString * _Nullable)externalUserId;
--(bool)isShowInstructions;
 -(bool)isDebug;
 -(void)setIsDebug:(bool)value;
 -(bool)getIsDebug;
