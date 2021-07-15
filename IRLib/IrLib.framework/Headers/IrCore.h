@@ -116,8 +116,6 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(void)showMatrixAssortmentViewController;
 -(void)showMatrixAssortmentViewControllerWithParent:(id)parent;
 -(void)showLackOfAssortmentViewController;
--(void)showFormsViewControllerForStoreId:(NSInteger)storeId
-                        showOnlyNewAnket:(BOOL)shouldShowOnlyNewAnket;
 -(void)showFormsEditViewController;
 -(void)closeVisit;
 -(void)selectStore;

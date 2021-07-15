@@ -22,7 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIViewController *)summaryReportsViewController;
 - (UIViewController *)selectStoreViewController;
 - (UIViewController *)filtersViewController;
-- (UIViewController *)anketViewControllerWithCloseVisitHandler:(void (^)(BOOL))closeVisitHandler;
+
+- (UIViewController *)anketViewControllerForVisitId:(NSString *)visitId
+                                  closeVisitHandler:(void (^)(BOOL))closeVisitHandle;
+- (UIViewController *)anketViewControllerInViewModeForVisitId:(NSString *)visitId;
+
 - (UIViewController *)assortmentReportViewController;
 - (UIViewController *)matrixViewControllerForStoreId:(NSInteger)storeId shouldReloadDataAfterAppear:(BOOL)shouldReloadData;
 - (UIViewController *)lackOfAssortmentViewController;
