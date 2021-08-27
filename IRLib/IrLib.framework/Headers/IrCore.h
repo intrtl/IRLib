@@ -142,7 +142,7 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(void)setSettings:(IRUserDefinedSettings *)settings;
 -(IRUserDefinedSettings *)getSettings;
 -(bool)isTokenValid;
-- (BOOL)shouldReauthorizeWithUsername:(NSString *)userName externalUserId:(NSString * _Nullable)externalUserId;
+- (BOOL)shouldReauthorizeWithUserName:(NSString *)userName userPassword:(NSString *)userPassword externalUserId:(NSString * _Nullable)externalUserId;
 -(bool)isDebug;
 -(void)setIsDebug:(bool)value;
 -(bool)getIsDebug;
