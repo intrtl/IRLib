@@ -19,5 +19,5 @@ Pod::Spec.new do |spec|
   spec.dependency "OpenCV2", "~> 3.4.10"
   spec.dependency "AppCenter", "~> 1.2.0"
   spec.dependency "IrLibSwift", "1.23.0.6"
-  spec.dependency "BugfenderSDK", "1.10.0"
+  spec.dependency "BugfenderSDK", "1.8.0"
 end
