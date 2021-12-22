@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		7cU7A10il5Xhh9+3dEg8+lRP+lQ=
+		goJOXN46F8ElOPIRFy6mSbM6rPg=
 		</data>
 		<key>Base.lproj/CamView.nib</key>
 		<data>
@@ -322,7 +322,7 @@
 		</data>
 		<key>Headers/IrCore.h</key>
 		<data>
-		H532FUQtEwGPMcXa9sfhhDljeQg=
+		QlJBYGmQj+tCnvn7zNEh9+09aPk=
 		</data>
 		<key>Headers/IrLastVisit.h</key>
 		<data>
@@ -350,7 +350,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4NV1EOd9BG3N59XKY+KJHy7VBx8=
+		EhVNaKxcQcSIf+dzw85ckEReafk=
 		</data>
 		<key>InfoIrLib.plist</key>
 		<data>
@@ -1778,11 +1778,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7cU7A10il5Xhh9+3dEg8+lRP+lQ=
+			goJOXN46F8ElOPIRFy6mSbM6rPg=
 			</data>
 			<key>hash2</key>
 			<data>
-			mx5Y5tH6SASchiMSjZpizJ7mG6PkP9Wk4msx8gl4Exc=
+			XfQkvZf6+oM+6QD25/gnwyd6Ak/K8mfhxzKcE/ego8I=
 			</data>
 		</dict>
 		<key>Base.lproj/CamView.nib</key>
@@ -2625,11 +2625,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H532FUQtEwGPMcXa9sfhhDljeQg=
+			QlJBYGmQj+tCnvn7zNEh9+09aPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Xn46SXirifHKucjJFspys1h3Jb0vEUDYu+snqoIJhI=
+			4y0mbt/MzpSbMX9ymlxzNgipACWRWx8pvZfTyN6OYtI=
 			</data>
 		</dict>
 		<key>Headers/IrLastVisit.h</key>
