@@ -36,6 +36,8 @@ typedef NS_ENUM(NSUInteger, IRSyncError) {
 @property long sentPhotosCount;
 /// Количество распознанных фото.
 @property long recognizedPhotosCount;
+/// Количество фото с ошибкой.
+@property long errorPhotosCount;
 /// Количество нераспозанных визитов.
 @property long notRecognizedVisitsCount;
 /// Количество распозанных визитов.

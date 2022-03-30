@@ -33,7 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIViewController *)cameraViewControllerWithIrCore:(IrCore *)irCore taskId:(NSString * _Nullable)taskId backTapHandler:(void(^)(void))backTapHandler;
 - (id<WidgetsModuleInput>)widgetsController;
 - (UIViewController *)storeDetailViewControllerWithIrCore:(IrCore *)irCore storeId:(NSInteger)storeId;
-- (UIViewController *)taskDetailViewControllerWithIrCore:(IrCore *)irCore internalTaskId:(NSString * _Nullable)internalTaskId;
+- (UIViewController *)taskDetailViewControllerWithIrCore:(IrCore *)irCore
+                                                 visitId:(NSString *)visitId
+                                                 storeId:(NSInteger)storeId
+                                          internalTaskId:(NSString * _Nullable)internalTaskId;
 - (UIViewController *)visitStatsViewControllerWithVisitId:(NSString *)visitId;
 
 - (UIViewController *)reportFiltersViewControllerWithStoreId:(NSInteger)storeId

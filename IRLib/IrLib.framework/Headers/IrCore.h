@@ -23,6 +23,7 @@
 @protocol IRStoreService;
 @protocol IRDataManagerProtocol;
 @protocol SyncService;
+@protocol CameraModuleOutput;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,6 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, nullable) void(^updateAnketHandler)(void);
 @property (nonatomic, copy, nullable) void(^authErrorHandler)(void);
+@property (nonatomic, copy, nullable) void(^showSyncStatsScreenHandler)(void);
 
 @property (weak, nonatomic) id<IrCoreDelegate> delegate;
 FOUNDATION_EXPORT int const IR_ERROR_BUSY;
@@ -74,7 +76,6 @@ FOUNDATION_EXPORT int const IR_ERROR_NOT_MULTIPORTAL_MODE;
 FOUNDATION_EXPORT int const IR_ERROR_PORTAL_INCORRECT;
 /// Был передан пустой ИД портала в мультипортальном режиме.
 FOUNDATION_EXPORT int const IR_ERROR_EMPTY_PORTAL;
-FOUNDATION_EXPORT int const IR_ERROR_NO_ENOUGH_SPACE;
 
 FOUNDATION_EXPORT int const AILET_VISIT_ERROR_CANT_FINISH;
 FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
@@ -108,10 +109,21 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 
 -(void)configure;
 -(void)finishVisit;
--(void)initAndShowCameraViewControllerWithTaskId:(NSString * _Nullable)taskId;
+-(void)initAndShowCameraViewControllerWithExternalVisitId:(nonnull NSString *)externalVisitId
+                                          externalStoreId:(nonnull NSString *)externalStoreId
+                                                   taskId:(nullable NSString *)taskId;
 -(void)panoramaProcess;
--(void)showCameraViewControllerWithTaskId:(NSString * _Nullable)taskId;
--(void)showCameraViewControllerWithParent:(id)parent taskId:(NSString * _Nullable)taskId;
+-(void)showCameraViewControllerWithExternalVisitId:(nonnull NSString *)externalVisitId
+                                   externalStoreId:(nonnull NSString *)externalStoreId
+                                            taskId:(nullable NSString *)taskId;
+-(void)showCameraViewControllerWithParent:(id)parent
+                          externalVisitId:(nonnull NSString *)externalVisitId
+                          externalStoreId:(nonnull NSString *)externalStoreId
+                                   taskId:(nullable NSString *)taskId;
+
+-(void)showReportPhotoBrowseViewControllerWithParent:(nullable UIViewController *)parent
+                                              taskId:(nullable NSString *)taskId;
+
 - (BOOL)isAnketAvailable;
 -(void)showReportsViewController;
 -(void)showMatrixAssortmentViewController;
@@ -124,6 +136,7 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(void)initAsApp;
 -(void)initTimers;
 -(void)stopTimers;
+- (void)stopSyncMonitoring;
 -(void)reinitModel;
 
 -(void)loginOnAuthServer:(NSString *)login
@@ -197,7 +210,8 @@ isForceStart:(BOOL)isForceStart;
 -(void)startLocalNotification;
 -(IrLastVisit *)getLastVisit:(NSString *)external_store_id;
 -(int)makeCrash;
--(int)libVersion;
+-(int)libVersion DEPRECATED_MSG_ATTRIBUTE("This is old version number. Use frameworkVersion instead.");
+-(NSString *)frameworkVersion;
 -(BOOL)useInfinityBgState;
 -(void)useInfinityBg:(BOOL)use;
 -(void)initAnalytics;
@@ -229,6 +243,7 @@ isForceStart:(BOOL)isForceStart;
 -(void)fetchPlanIfNeeded;
 -(IRSyncInfoPresentableEntity *)syncInfo;
 - (void)startSync;
+- (long)libSync:(long)result;
 - (void)startForcePhotoSync;
 
 - (BOOL)isInternetAvailable;
@@ -238,6 +253,7 @@ isForceStart:(BOOL)isForceStart;
                                                                 externalVisitId:(NSString *)external_visit_id
                                                                          taskId:(NSString * _Nullable)taskId
                                                                    isForceStart:(BOOL)isForceStart
+                                                                   cameraOutput:(id<CameraModuleOutput>)cameraOutput
                                                            backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
                                                                           error:(NSError **)error;
 - (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId internalTaskId:(NSString * _Nullable)internalTaskId;
@@ -254,15 +270,14 @@ isForceStart:(BOOL)isForceStart;
 /// Отправка фото
 /// @param photoId идентификатор фото
 /// @param updateHandler коллбэк, позволяющий отследить изменение статуса фото
-//- (void)sendPhotoWithId:(NSString *)photoId updateHandler:(void(^)(NSError * _Nullable))updateHandler;
+- (void)sendPhotoWithId:(NSString *)photoId updateHandler:(void(^)(NSError * _Nullable))updateHandler;
 
 /// Отправка информации о сцене.
 /// Метод не делает моментальный запрос на отправку сцены. Он добавляет операцию в очередь отправки. Метод будет выполнен, когда успешно завершится запрос отправки у любой из фотографий для этой сцены.
 /// @param sceneId идентификатор сцены
+- (void)sendSceneAttributesForSceneWithId:(NSString *)sceneId;
 
-- (void)deletePhotoWithId:(NSString *)photoId;
-
-- (void)deletePhotosForSceneWithId:(NSString *)sceneId;
+- (void)restartSendPhotoSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
 
 - (void)downloadPreviousVisitWithExternalId:(NSString *)externalId error:(NSError **)error;
 

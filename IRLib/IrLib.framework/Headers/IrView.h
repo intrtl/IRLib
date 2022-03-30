@@ -129,7 +129,7 @@ isForceStart:(BOOL)isForceStart;
 +(long)getNotSentImagesCnt;
 +(void)startLocalNotification;
 +(IrLastVisit *)getLastVisit:(NSString *)external_store_id;
-+(int)libVersion;
++(NSString *)frameworkVersion;
 +(void)useInfinityBg:(BOOL)use;
 +(void)initAnalytics;
 
