@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		goJOXN46F8ElOPIRFy6mSbM6rPg=
+		+6XoU59P0PwFliX+KiigjNRkP4Q=
 		</data>
 		<key>Base.lproj/CamView.nib</key>
 		<data>
@@ -350,7 +350,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EhVNaKxcQcSIf+dzw85ckEReafk=
+		1lAbsLOlz6FT2k7na3tFLVNy2ko=
 		</data>
 		<key>InfoIrLib.plist</key>
 		<data>
@@ -1554,11 +1554,11 @@
 		</data>
 		<key>SelectedImageControlsView.nib/objects-11.0+.nib</key>
 		<data>
-		4XKAX+RroUwC3qmJlYg7K1VKND4=
+		ep7jd4voaKZkoQ5SE4SZ3b9EDB0=
 		</data>
 		<key>SelectedImageControlsView.nib/runtime.nib</key>
 		<data>
-		CHs4vajyfduihP6DKrUWq0zTL7Q=
+		JxcdWD/dP7qwe+3uq6oZX9Lag6Y=
 		</data>
 		<key>SelectorTableViewCell.nib</key>
 		<data>
@@ -1778,11 +1778,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			goJOXN46F8ElOPIRFy6mSbM6rPg=
+			+6XoU59P0PwFliX+KiigjNRkP4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			XfQkvZf6+oM+6QD25/gnwyd6Ak/K8mfhxzKcE/ego8I=
+			v3bQZYyTFeTK3+FAq6fA2hqEMsiwns4M3ox6kHUIuuc=
 			</data>
 		</dict>
 		<key>Base.lproj/CamView.nib</key>
@@ -5991,22 +5991,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4XKAX+RroUwC3qmJlYg7K1VKND4=
+			ep7jd4voaKZkoQ5SE4SZ3b9EDB0=
 			</data>
 			<key>hash2</key>
 			<data>
-			eZENxnYuhrjz4YzcNANwo7wUlJ6p/bSw+8a0JLPD7j0=
+			C+GnG8bD+5J3V/CNC4cPcS74H5rgXPWcCQh3vq4BY/Q=
 			</data>
 		</dict>
 		<key>SelectedImageControlsView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CHs4vajyfduihP6DKrUWq0zTL7Q=
+			JxcdWD/dP7qwe+3uq6oZX9Lag6Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			cc8GcDCuGoF6EGtmTMxS8IcEB6kTgzF+v7ktTXwnZ48=
+			CEE1pzWTPFAKsdzdDzNcTK0sI7sTf2QabPA66U01T6g=
 			</data>
 		</dict>
 		<key>SelectorTableViewCell.nib</key>
