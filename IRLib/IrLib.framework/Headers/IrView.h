@@ -159,6 +159,16 @@ external_user_id:(NSString*)external_user_id_
     crashLimit:(int)crashLimit
  isMultiportal:(BOOL)isMultiportal;
 
++(long)init:(NSString*)user_name_
+   password:(NSString*)user_password_
+ guestToken:(NSString *)guestToken
+external_user_id:(NSString*)external_user_id_
+notification:(NSString*)notificationName
+isForceInit:(BOOL)isForceInit
+ crashLimit:(int)crashLimit
+ domainName:(nullable NSString *)domainName
+isMultiportal:(BOOL)isMultiportal;
+
 + (long)setPortal:(nonnull NSString *)portalId;
 
 +(void)doDebugCommand;

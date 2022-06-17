@@ -112,7 +112,6 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(void)initAndShowCameraViewControllerWithExternalVisitId:(nonnull NSString *)externalVisitId
                                           externalStoreId:(nonnull NSString *)externalStoreId
                                                    taskId:(nullable NSString *)taskId;
--(void)panoramaProcess;
 -(void)showCameraViewControllerWithExternalVisitId:(nonnull NSString *)externalVisitId
                                    externalStoreId:(nonnull NSString *)externalStoreId
                                             taskId:(nullable NSString *)taskId;
@@ -131,13 +130,14 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(void)showLackOfAssortmentViewController;
 -(void)showFormsEditViewController;
 -(void)closeVisit;
--(void)selectStore;
 - (void)initAsLib;
 -(void)initAsApp;
 -(void)initTimers;
 -(void)stopTimers;
 - (void)stopSyncMonitoring;
 -(void)reinitModel;
+-(void)stopReportTimeTracking;
+-(void)startReportTimeTracking;
 
 -(void)loginOnAuthServer:(NSString *)login
                 password:(NSString *)password
@@ -175,6 +175,7 @@ external_user_id:(NSString*)external_user_id_
  notification:(NSString*)notificationName
   isForceInit:(BOOL)isForceInit
    crashLimit:(int)crashLimit
+   domainName:(nullable NSString *)domainName
 isMultiportal:(BOOL)isMultiportal;
 
 -(long)initIr:(NSString*)user_name_
@@ -183,7 +184,8 @@ isMultiportal:(BOOL)isMultiportal;
 external_user_id:(NSString*)external_user_id_
  notification:(NSString*)notificationName
   isForceInit:(BOOL)isForceInit
-   crashLimit:(int)crashLimit;
+   crashLimit:(int)crashLimit
+   domainName:(nullable NSString *)domainName;
 
 - (long)setPortal:(NSString *)portalId;
 
@@ -222,7 +224,6 @@ isForceStart:(BOOL)isForceStart;
 - (NSString *)getUserName;
 - (NSInteger)getUserId;
 -(NSString *)getStats;
--(bool)isCurrentVisitNotClosed;
 -(bool)isNeedSendDataToServer;
 -(long)getNotSendedPhototsCnt;
 -(NSString*)getVideoInstructionsUrl;
@@ -238,7 +239,6 @@ isForceStart:(BOOL)isForceStart;
 -(void)destroy;
 -(bool)getAutoPhotosTestEnabled;
 -(void)setAutoPhotosTestEnabled:(bool)value;
--(void)closeIncorrectScenes;
 -(void)fetchAppSettings;
 -(void)fetchPlanIfNeeded;
 -(IRSyncInfoPresentableEntity *)syncInfo;
@@ -261,11 +261,6 @@ isForceStart:(BOOL)isForceStart;
 - (void)showTechSupportScreen;
 - (void)updateDeviceToken:(NSData *)deviceToken;
 - (void)updateGetPhotoResultIntervals:(NSArray *)intervals;
-
-/// Запуск анализа фото
-/// @param photoId идентификатор фото
-/// @return Возвращает флаг, готово ли фото к отправке или нужен аппрув
-- (BOOL)detectErrorsForPhotoWithId:(NSString *)photoId;
 
 /// Отправка фото
 /// @param photoId идентификатор фото

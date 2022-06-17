@@ -30,7 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIViewController *)assortmentReportViewController;
 - (UIViewController *)matrixViewControllerForStoreId:(NSInteger)storeId shouldReloadDataAfterAppear:(BOOL)shouldReloadData;
 - (UIViewController *)lackOfAssortmentViewController;
-- (UIViewController *)cameraViewControllerWithIrCore:(IrCore *)irCore taskId:(NSString * _Nullable)taskId backTapHandler:(void(^)(void))backTapHandler;
 - (id<WidgetsModuleInput>)widgetsController;
 - (UIViewController *)storeDetailViewControllerWithIrCore:(IrCore *)irCore storeId:(NSInteger)storeId;
 - (UIViewController *)taskDetailViewControllerWithIrCore:(IrCore *)irCore
@@ -46,6 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
                                             productGroupName:(nullable NSString *)productGroupName
                                            currentReportType:(nullable NSString *)currentReportType
                                                       output:(id<ReportFiltersModuleOutput>)output;
+- (UIViewController *)appDocsViewController;
 
 @end
 
