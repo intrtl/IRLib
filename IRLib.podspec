@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "IRLib"
-  spec.version      = "1.187.8" 
+  spec.version      = "1.187.9" 
   spec.summary      = "Framework for Intelligence Retail functionality integration"
   spec.static_framework = true;
   spec.description  = <<-DESC
@@ -18,6 +18,6 @@ Pod::Spec.new do |spec|
   spec.dependency "Realm", "~> 5.5.0"
   spec.dependency "OpenCV2", "~> 3.4.10"
   spec.dependency "AppCenter", "~> 1.2.0"
-  spec.dependency "IrLibSwift", "1.23.4"
+  spec.dependency "IrLibSwift", "1.23.5"
   spec.dependency "BugfenderSDK", "1.8.0"
 end
