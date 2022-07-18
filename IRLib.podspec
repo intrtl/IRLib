@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.dependency "Realm", "~> 5.5.0"
   spec.dependency "OpenCV2", "~> 3.4.10"
   spec.dependency "AppCenter", "~> 1.2.0"
-  spec.dependency "IrLibSwift", "4.5.1"
+  spec.dependency "IrLibSwift", "4.6.1"
   spec.dependency "BugfenderSDK", "1.8.0"
   spec.dependency "Amplitude", "~> 8.8.0"
 end
