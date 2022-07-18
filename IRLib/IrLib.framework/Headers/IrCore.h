@@ -14,7 +14,7 @@
 #import "IrLastVisit.h"
 #import "ContentStruct.h"
 #import "TechSupportPresenter.h"
-#import <IrLibSwift/IrLibSwift-Swift.h>
+#import "AiletFeatureToggle.h"
 
 @class SelectStoreTableViewController;
 @class Api;
