@@ -261,7 +261,9 @@ isForceStart:(BOOL)isForceStart;
 
 - (void)logScreenTimeEventWithId:(NSString *)id name:(NSString *)name duration:(long)duration;
 
-- (UIViewController *)oosReportViewController;
+- (nullable UIViewController *)oosReportViewController;
+
+- (UIViewController *)searchStoresViewController;
 
 @end
 

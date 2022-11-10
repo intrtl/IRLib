@@ -21,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIViewController *)summaryReportsViewControllerWithExternalVisitId:(NSString *)externalVisitId internalTaskId:(NSString * _Nullable)internalTaskId;
 - (UIViewController *)summaryReportsViewController;
 - (UIViewController *)selectStoreViewController;
-- (UIViewController *)filtersViewController;
 
 - (UIViewController *)anketViewControllerForVisitId:(NSString *)visitId
                                   closeVisitHandler:(void (^)(BOOL))closeVisitHandle;
@@ -44,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
                                             productGroupCode:(nullable NSString *)productGroupCode
                                             productGroupName:(nullable NSString *)productGroupName
                                            currentReportType:(nullable NSString *)currentReportType
-                                                      output:(id<ReportFiltersModuleOutput>)output;
+                                                      output:(id<LegacyReportFiltersModuleOutput>)output;
 - (UIViewController *)appDocsViewController;
 
 @end
