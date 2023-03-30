@@ -18,13 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithIrCore:(IrCore *)irCore servicesBuilder:(IRLibServicesBuilder *)servicesBuilder;
 
+- (UIViewController *)workflowBasedStartViewContoller;
 - (UIViewController *)summaryReportsViewControllerWithExternalVisitId:(NSString *)externalVisitId internalTaskId:(NSString * _Nullable)internalTaskId;
 - (UIViewController *)summaryReportsViewController;
 - (UIViewController *)selectStoreViewController;
-
-- (UIViewController *)anketViewControllerForVisitId:(NSString *)visitId
-                                  closeVisitHandler:(void (^)(BOOL))closeVisitHandle;
-- (UIViewController *)anketViewControllerInViewModeForVisitId:(NSString *)visitId;
 
 - (UIViewController *)assortmentReportViewController;
 - (UIViewController *)matrixViewControllerForStoreId:(NSInteger)storeId shouldReloadDataAfterAppear:(BOOL)shouldReloadData;
@@ -45,6 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
                                            currentReportType:(nullable NSString *)currentReportType
                                                       output:(id<LegacyReportFiltersModuleOutput>)output;
 - (UIViewController *)appDocsViewController;
+- (UIViewController *)manageAppDataController: (id<ManageAppDataModuleOutput>) moduleOutput;
 
 @end
 

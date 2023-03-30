@@ -121,7 +121,6 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(void)showReportPhotoBrowseViewControllerWithParent:(nullable UIViewController *)parent
                                               taskId:(nullable NSString *)taskId;
 
-- (BOOL)isAnketAvailable;
 -(void)showReportsViewController;
 -(void)showMatrixAssortmentViewController;
 -(void)showMatrixAssortmentViewControllerWithParent:(id)parent;
@@ -237,17 +236,19 @@ isForceStart:(BOOL)isForceStart;
 - (long)libSync:(long)result;
 - (void)startForcePhotoSync;
 
-- (BOOL)isInternetAvailable;
+- (void)setIsApp;
 - (BOOL)isStartedFromDeeplink;
-- (void)setStartedFromDeeplink;
-- (nullable UIViewController *)configuredVisitStartControllerForExternalStoreId:(NSString *)external_store_id
-                                                                externalVisitId:(NSString *)external_visit_id
-                                                                         taskId:(NSString * _Nullable)taskId
-                                                                   isForceStart:(BOOL)isForceStart
-                                                                   cameraOutput:(id<CameraModuleOutput>)cameraOutput
-                                                           backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
-                                                                          error:(NSError **)error;
-- (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId internalTaskId:(NSString * _Nullable)internalTaskId;
+- (void)setStartedFromDeeplink:(BOOL)isStartedViaDeeplink;
+- (nullable UIViewController *)
+    configuredVisitStartControllerForExternalStoreId:(NSString *)external_store_id
+                                     externalVisitId:(NSString *)external_visit_id
+                                              taskId:(NSString * _Nullable)taskId
+                                        isForceStart:(BOOL)isForceStart
+                                        cameraOutput:(id<CameraModuleOutput>)cameraOutput
+                                backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
+                                               error:(NSError **)error;
+- (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId
+                                    internalTaskId:(NSString * _Nullable)internalTaskId;
 - (BOOL)shouldSyncManually;
 - (void)showTechSupportScreen;
 - (void)updateDeviceToken:(NSData *)deviceToken;
@@ -263,7 +264,7 @@ isForceStart:(BOOL)isForceStart;
 
 - (nullable UIViewController *)oosReportViewController;
 
-- (UIViewController *)searchStoresViewController;
+- (nullable UIViewController *)searchStoresViewController;
 
 @end
 

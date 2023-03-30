@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		NGEWXCaGzPwLq2xNHWxOEKbwfWQ=
+		E4Q9pOeyiQkHrt7dOVrrIDbf2JI=
 		</data>
 		<key>BrandCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -48,26 +48,6 @@
 		<data>
 		+ob8LiI3Z/iDrOXe8D6jnBgtNUs=
 		</data>
-		<key>FormsIR.storyboardc/Ceg-xQ-toq-view-8Ge-uc-6ue.nib</key>
-		<data>
-		mCvKeJjErzTuphFxgor2A/Ft4Zk=
-		</data>
-		<key>FormsIR.storyboardc/Eh0-fk-Avb-view-cY4-jm-idh.nib</key>
-		<data>
-		lFC0Xv2hzF/2/c/KGZk0OOxhDdY=
-		</data>
-		<key>FormsIR.storyboardc/Info.plist</key>
-		<data>
-		rnDI2gOszzcQ4+a7U5peXE/L3RI=
-		</data>
-		<key>FormsIR.storyboardc/UITableViewController-Ceg-xQ-toq.nib</key>
-		<data>
-		HYEZmQfLJ0EzYHs+QQUMt7g7/+0=
-		</data>
-		<key>FormsIR.storyboardc/anketViewController.nib</key>
-		<data>
-		JhG0D9cm30sHf3ucZIcmFvGeKDI=
-		</data>
 		<key>HeaderTableViewCell.nib</key>
 		<data>
 		cUOuoiGhYxu3MUtczJamI5YCpN8=
@@ -86,7 +66,7 @@
 		</data>
 		<key>Headers/IRScreensBuilder.h</key>
 		<data>
-		u9cmwLm6i7MNbYZwrJPAiJ/8VY0=
+		E/mPhGBCpGYS99hpjGjUrmug1DY=
 		</data>
 		<key>Headers/IRSyncInfoPresentableEntity.h</key>
 		<data>
@@ -102,7 +82,7 @@
 		</data>
 		<key>Headers/IrCore.h</key>
 		<data>
-		YMVLc4Yahk7GRwqL5TWG5rGfFzc=
+		W7Ww9tg8ffHK60X5ZRPQpW+YfCw=
 		</data>
 		<key>Headers/IrLastVisit.h</key>
 		<data>
@@ -130,7 +110,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qgqHCZAzZWKS7XoL6ka2qpAnthE=
+		1/QA00obp4LFDN7iMzKnORNddcE=
 		</data>
 		<key>LSLogViewer.nib</key>
 		<data>
@@ -223,18 +203,6 @@
 		<key>ProductHeaderCollectionViewCell.nib/runtime.nib</key>
 		<data>
 		UXaGguv0rAObc0GoEiMDCK8d50g=
-		</data>
-		<key>QuestionHeaderFooterView.nib</key>
-		<data>
-		EFDp7GtIQve5FHS08MCRDD1DIsE=
-		</data>
-		<key>QuestionType1_2TableViewCell.nib</key>
-		<data>
-		o5jZJ5chQOsxFO1Yt8L+kJ/xXmk=
-		</data>
-		<key>QuestionType3TableViewCell.nib</key>
-		<data>
-		TDt/1++yM/Y2PIBHGmjpVF4NGcM=
 		</data>
 		<key>RATableViewCell.nib</key>
 		<data>
@@ -613,7 +581,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qYAV3p5A3VaGXkIYzoHbu+PgRk4vrPC1ZjHitaDPFkA=
+			Wiq0xHKGMf82MyVWrHnjZxYqANAw9M+spHIAItMW5qw=
 			</data>
 		</dict>
 		<key>BrandCollectionViewCell.nib/objects-12.3+.nib</key>
@@ -672,41 +640,6 @@
 			a2Hs0nHfyjRkWsSDd1RVZLrTeMWLfVG2GsWhgAhkHkc=
 			</data>
 		</dict>
-		<key>FormsIR.storyboardc/Ceg-xQ-toq-view-8Ge-uc-6ue.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			irs/Hn9uaJHqj17uhm0/Ce1hDNPmDq68sf9/h+tpTro=
-			</data>
-		</dict>
-		<key>FormsIR.storyboardc/Eh0-fk-Avb-view-cY4-jm-idh.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9KhYMG2e4Nct0iFMPyXlHJcDBmfLgeVfBIWg2HU0hwM=
-			</data>
-		</dict>
-		<key>FormsIR.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5SJ55VPpqdcb39C+MEWf3/kQe1PS8U2clnJtaVIUie0=
-			</data>
-		</dict>
-		<key>FormsIR.storyboardc/UITableViewController-Ceg-xQ-toq.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			U7SINQRTblCf05HkQZo7qOJqbfpLcm6VQWX6Et/nN1Y=
-			</data>
-		</dict>
-		<key>FormsIR.storyboardc/anketViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			B4Ov166Tuc//hHoSiqC7SvSTg/gG/fc/jrzNo6b/J/Q=
-			</data>
-		</dict>
 		<key>HeaderTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -739,7 +672,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hNwUzDrzuCkBR5mxxuwRPfBGMQ3fB9gJbcqs7zI8/9o=
+			iN1nN+dV4dArEKmk0xlhRpYS+f7BDIAhL89hjvnJ7R4=
 			</data>
 		</dict>
 		<key>Headers/IRSyncInfoPresentableEntity.h</key>
@@ -767,7 +700,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KCT+tl20p2d8sxsatwvfmfnLZ2qx0eo6EMQRjky3WvU=
+			TOtQqTUYa3ySbf13d9D+2x9v4kKNIW3MeICIo7SNcg0=
 			</data>
 		</dict>
 		<key>Headers/IrLastVisit.h</key>
@@ -964,27 +897,6 @@
 			<key>hash2</key>
 			<data>
 			sfeLAyLTU0dsdcIwJw+1INyyeJnbSbGsYHzRKZZJmHI=
-			</data>
-		</dict>
-		<key>QuestionHeaderFooterView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			69EZxviaeP+JvvRkNPbbpD2DigX9i+8N7w6W05oWVP8=
-			</data>
-		</dict>
-		<key>QuestionType1_2TableViewCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			utve3J7Kv1Ae203QEFGrL/DQSqKD/sTU1v7WodxIVdc=
-			</data>
-		</dict>
-		<key>QuestionType3TableViewCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Qfoh82dqfKgU3vi4f8YcsABaSl5lRKbm+RxLxpqKHWc=
 			</data>
 		</dict>
 		<key>RATableViewCell.nib</key>
