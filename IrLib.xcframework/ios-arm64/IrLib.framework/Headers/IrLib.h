@@ -11,4 +11,3 @@ FOUNDATION_EXPORT const unsigned char IrLibVersionString[];
 #import <IrLib/IrLastVisit.h>
 #import <IrLib/IrCore.h>
 #import <IrLib/IRUserDefinedSettings.h>
-#import <IrLib/IRUserInfoProvider.h>

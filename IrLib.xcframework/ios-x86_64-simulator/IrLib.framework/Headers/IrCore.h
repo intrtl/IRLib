@@ -23,12 +23,13 @@
 @protocol IRDataManagerProtocol;
 @protocol SyncService;
 @protocol CameraModuleOutput;
+typedef void(^SetupCompletionHandler)(long);
+typedef void(^PreviousVisitObtainResultHandler)(Visit * _Nullable, NSError *);
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol IrCoreDelegate <NSObject>
 @optional
--(void)showLogo:(UIImage *)logo;
 -(void)showOnline;
 -(void)showOffline;
 -(void)updateContent;
@@ -37,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)didReceiveSyncInfoError:(IRSyncError)error;
 @end
 
-@interface IrCore : NSObject <TechSupportPresenter>
+@interface IrCore : NSObject <TechSupportPresenter, StoresModuleOutput, TaskDetailsModuleOutput>
 
 @property (strong, nonatomic) Api *api;
 
@@ -122,39 +123,16 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
                                               taskId:(nullable NSString *)taskId;
 
 -(void)showReportsViewController;
--(void)showMatrixAssortmentViewController;
--(void)showMatrixAssortmentViewControllerWithParent:(id)parent;
 -(void)showLackOfAssortmentViewController;
--(void)showFormsEditViewController;
 -(void)closeVisit;
 - (void)initAsLib;
 -(void)initAsApp;
 -(void)initTimers;
 -(void)stopTimers;
 - (void)stopSyncMonitoring;
--(void)reinitModel;
 -(void)stopReportTimeTracking;
 -(void)startReportTimeTracking;
 
--(void)loginOnAuthServer:(NSString *)login
-                password:(NSString *)password
-              guestToken:(NSString *)guestToken
-      isShowDebugConsole:(bool)isShowDebugConsole
-              externalId:(nullable NSString *)externalId
-                 isDebug:(bool)isDebug
-            withCallback:(void (^)(int errorCode, NSString *ip, NSString *ipName, NSArray *services))callback;
-
--(void)loginOnAppServer:(NSString *)ip
-                 ipName:(NSString *)ipName
-                  login:(NSString*)login
-               password:(NSString*)password
-           withCallback:(void (^)(int resultCode))callback;
-
--(void)setSettings:(IRUserDefinedSettings *)settings;
--(IRUserDefinedSettings *)getSettings;
--(bool)isTokenValid;
-- (BOOL)shouldReauthorizeWithUserName:(NSString *)userName userPassword:(NSString *)userPassword externalUserId:(NSString * _Nullable)externalUserId;
--(bool)isDebug;
 -(void)setIsDebug:(bool)value;
 -(bool)getIsDebug;
 
@@ -165,24 +143,28 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 -(void)startBg;
 -(void)resetBg;
 -(long)syncCatalogs;
--(long)initIr:(NSString*)user_name_
-     password:(NSString*)user_password_
-   guestToken:(NSString *)guestToken
-external_user_id:(NSString*)external_user_id_
- notification:(NSString*)notificationName
-  isForceInit:(BOOL)isForceInit
-   crashLimit:(int)crashLimit
-   domainName:(nullable NSString *)domainName
-isMultiportal:(BOOL)isMultiportal;
 
--(long)initIr:(NSString*)user_name_
-     password:(NSString*)user_password_
-   guestToken:(NSString *)guestToken
-external_user_id:(NSString*)external_user_id_
- notification:(NSString*)notificationName
-  isForceInit:(BOOL)isForceInit
-   crashLimit:(int)crashLimit
-   domainName:(nullable NSString *)domainName;
+-(long)initIrWithUsername:(NSString*)username
+                  password:(NSString*)password
+                guestToken:(NSString *)guestToken
+           externalUserId:(NSString*)externalUserId
+              notification:(NSString*)notificationName
+               isForceInit:(BOOL)isForceInit
+                crashLimit:(int)crashLimit
+                domainName:(nullable NSString *)domainName
+            isMultiportal:(BOOL)isMultiportal;
+
+/// 
+-(void)initIrWithUsername:(NSString*)username
+                 password:(NSString*)password
+               guestToken:(NSString *)guestToken
+           externalUserId:(NSString*)externalUserId
+             notification:(NSString*)notificationName
+              isForceInit:(BOOL)isForceInit
+               crashLimit:(int)crashLimit
+               domainName:(nullable NSString *)domainName
+            isMultiportal:(BOOL)isMultiportal
+               completion:(SetupCompletionHandler)completion;
 
 - (long)setPortal:(NSString *)portalId;
 
@@ -191,13 +173,14 @@ external_visit_id:(NSString*)external_visit_id;
 -(long)start:(NSString*)external_store_id
 external_visit_id:(NSString*)external_visit_id
 isForceStart:(BOOL)isForceStart;
--(long)showSummaryReport:(NSString *)external_visit_id;
+- (long)showSummaryReport:(NSString *)external_visit_id;
+- (void)showSummaryReport:(NSString *)externalVisitId completion:(void(^)(NSInteger))completion;
 -(NSArray *)reports;
 -(NSDictionary *)reports:(NSString *)external_visit_id;
 -(NSDictionary *)reports:(NSString *)external_visit_id internalTaskId:(NSString * _Nullable)internalTaskId;
 -(NSDictionary *)reports:(NSString *)external_visit_id
                  isLogOn:(BOOL)isLogOn;
--(long)syncData;
+-(long)sendUnsentDataIfNeeded;
 -(long)assortmentCorrect:(NSDictionary*)corrections;
 -(long)loadSamples;
 -(long)loadSamples:(void (^)(bool isAllLoaded))callback;
@@ -208,31 +191,25 @@ isForceStart:(BOOL)isForceStart;
 -(long)getNotSentImagesCnt;
 -(void)startLocalNotification;
 -(IrLastVisit *)getLastVisit:(NSString *)external_store_id;
--(int)libVersion DEPRECATED_MSG_ATTRIBUTE("This is old version number. Use frameworkVersion instead.");
 -(NSString *)frameworkVersion;
 -(BOOL)useInfinityBgState;
 -(void)useInfinityBg:(BOOL)use;
 -(void)initAnalytics;
 -(void)doDebugCommand;
--(void)doThenLogout;
-- (NSString *)getServer;
-- (NSString *)getServerName;
-- (NSString *)getUserName;
-- (NSInteger)getUserId;
+-(void)clearDataAfterLogout;
 -(NSString *)getStats;
--(NSString*)getVideoInstructionsUrl;
 -(NSString *)getLanguage;
 -(void)setInstructionsShowed;
 -(NSString*)getVersion;
 -(void)startSendAndRecive;
 -(long)getCurrentStoreId;
--(void)destroy;
 -(bool)getAutoPhotosTestEnabled;
 -(void)setAutoPhotosTestEnabled:(bool)value;
 -(void)fetchAppSettings;
 -(void)fetchPlanIfNeeded;
 -(IRSyncInfoPresentableEntity *)syncInfo;
 - (void)startSync;
+- (void)loadAllCatalogsWithCompletion:(void(^)(long))completion;
 - (long)libSync:(long)result;
 - (void)startForcePhotoSync;
 
@@ -256,15 +233,13 @@ isForceStart:(BOOL)isForceStart;
 
 - (void)restartSendPhotoSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
 
-- (void)downloadPreviousVisitWithExternalId:(NSString *)externalId error:(NSError **)error;
+- (void)downloadPreviousVisitWithExternalId:(NSString *)externalId completion:(PreviousVisitObtainResultHandler)completion;
 
 - (void)restartSendSceneAttributesSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
 
 - (void)logScreenTimeEventWithId:(NSString *)id name:(NSString *)name duration:(long)duration;
 
 - (nullable UIViewController *)oosReportViewController;
-
-- (nullable UIViewController *)searchStoresViewController;
 
 @end
 

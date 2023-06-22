@@ -18,7 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithIrCore:(IrCore *)irCore servicesBuilder:(IRLibServicesBuilder *)servicesBuilder;
 
-- (UIViewController *)workflowBasedStartViewContoller;
 - (UIViewController *)summaryReportsViewControllerWithExternalVisitId:(NSString *)externalVisitId internalTaskId:(NSString * _Nullable)internalTaskId;
 - (UIViewController *)summaryReportsViewController;
 - (UIViewController *)selectStoreViewController;
@@ -41,8 +40,6 @@ NS_ASSUME_NONNULL_BEGIN
                                             productGroupName:(nullable NSString *)productGroupName
                                            currentReportType:(nullable NSString *)currentReportType
                                                       output:(id<LegacyReportFiltersModuleOutput>)output;
-- (UIViewController *)appDocsViewController;
-- (UIViewController *)manageAppDataController: (id<ManageAppDataModuleOutput>) moduleOutput;
 
 @end
 
