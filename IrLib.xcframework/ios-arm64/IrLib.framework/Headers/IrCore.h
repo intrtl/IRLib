@@ -24,7 +24,7 @@
 @protocol SyncService;
 @protocol CameraModuleOutput;
 typedef void(^SetupCompletionHandler)(long);
-typedef void(^PreviousVisitObtainResultHandler)(Visit * _Nullable, NSError *);
+typedef void(^PreviousVisitObtainResultHandler)(NSString * _Nullable, NSError * _Nullable);
 
 NS_ASSUME_NONNULL_BEGIN
 
