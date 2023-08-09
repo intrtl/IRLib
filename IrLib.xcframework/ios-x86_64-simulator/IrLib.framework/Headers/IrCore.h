@@ -42,7 +42,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) Api *api;
 
-@property (nonatomic, copy, nullable) void(^updateAnketHandler)(void);
 @property (nonatomic, copy, nullable) void(^authErrorHandler)(void);
 @property (nonatomic, copy, nullable) void(^showSyncStatsScreenHandler)(void);
 
@@ -80,9 +79,6 @@ FOUNDATION_EXPORT int const IR_ERROR_EMPTY_PORTAL;
 FOUNDATION_EXPORT int const AILET_VISIT_ERROR_CANT_FINISH;
 FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
 
-FOUNDATION_EXPORT int const MODE_PANO_NONE;
-FOUNDATION_EXPORT int const MODE_PANO_70;
-
 #pragma mark - Initialization
 
 + (instancetype)new NS_UNAVAILABLE;
@@ -107,7 +103,6 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 
 #pragma mark - Instance methods
 
--(void)finishVisit;
 -(void)initAndShowCameraViewControllerWithExternalVisitId:(nonnull NSString *)externalVisitId
                                           externalStoreId:(nonnull NSString *)externalStoreId
                                                    taskId:(nullable NSString *)taskId;
@@ -123,7 +118,6 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
                                               taskId:(nullable NSString *)taskId;
 
 -(void)showReportsViewController;
--(void)showLackOfAssortmentViewController;
 -(void)closeVisit;
 - (void)initAsLib;
 -(void)initAsApp;
@@ -132,9 +126,6 @@ FOUNDATION_EXPORT int const MODE_PANO_70;
 - (void)stopSyncMonitoring;
 -(void)stopReportTimeTracking;
 -(void)startReportTimeTracking;
-
--(void)setIsDebug:(bool)value;
--(bool)getIsDebug;
 
 //IrView --------------------------------
 -(int)dbVersion;
@@ -181,12 +172,9 @@ isForceStart:(BOOL)isForceStart;
 -(NSDictionary *)reports:(NSString *)external_visit_id
                  isLogOn:(BOOL)isLogOn;
 -(long)sendUnsentDataIfNeeded;
--(long)assortmentCorrect:(NSDictionary*)corrections;
 -(long)loadSamples;
 -(long)loadSamples:(void (^)(bool isAllLoaded))callback;
--(NSDictionary *)notFound:(NSString *)external_visit_id;
 -(void)resetDB;
--(NSString *) getLogs;
 -(BOOL)isNeedSyncData;
 -(long)getNotSentImagesCnt;
 -(void)startLocalNotification;
@@ -199,14 +187,12 @@ isForceStart:(BOOL)isForceStart;
 -(void)clearDataAfterLogout;
 -(NSString *)getStats;
 -(NSString *)getLanguage;
--(void)setInstructionsShowed;
 -(NSString*)getVersion;
 -(void)startSendAndRecive;
 -(long)getCurrentStoreId;
 -(bool)getAutoPhotosTestEnabled;
 -(void)setAutoPhotosTestEnabled:(bool)value;
 -(void)fetchAppSettings;
--(void)fetchPlanIfNeeded;
 -(IRSyncInfoPresentableEntity *)syncInfo;
 - (void)startSync;
 - (void)loadAllCatalogsWithCompletion:(void(^)(long))completion;
@@ -224,8 +210,6 @@ isForceStart:(BOOL)isForceStart;
                                         cameraOutput:(id<CameraModuleOutput>)cameraOutput
                                 backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
                                                error:(NSError **)error;
-- (NSDictionary *)visitStatsForVisitWithExternalId:(NSString *)externalVisitId
-                                    internalTaskId:(NSString * _Nullable)internalTaskId;
 - (BOOL)shouldSyncManually;
 - (void)showTechSupportScreen;
 - (void)updateDeviceToken:(NSData *)deviceToken;
@@ -240,6 +224,10 @@ isForceStart:(BOOL)isForceStart;
 - (void)logScreenTimeEventWithId:(NSString *)id name:(NSString *)name duration:(long)duration;
 
 - (nullable UIViewController *)oosReportViewController;
+
+#ifdef INTERNAL_USAGE
+- (void)setDevAuthTo:(BOOL)isDevAuth;
+#endif
 
 @end
 

@@ -119,12 +119,9 @@ isForceStart:(BOOL)isForceStart;
 +(NSDictionary *)reports:(NSString *)external_visit_id
                  isLogOn:(BOOL)isLogOn;
 +(long)syncData;
-+(long)assortmentCorrect:(NSDictionary*)corrections;
 +(long)loadSamples;
 +(long)loadSamples:(void (^)(bool isAllLoaded))callback;
-+(NSDictionary *)notFound:(NSString *)external_visit_id;
 +(void)resetDB;
-+(NSString *) getLogs;
 +(BOOL)isNeedSyncData;
 +(long)getNotSentImagesCnt;
 +(void)startLocalNotification;
@@ -172,10 +169,12 @@ isMultiportal:(BOOL)isMultiportal;
 + (long)setPortal:(nonnull NSString *)portalId;
 
 +(void)doDebugCommand;
-+(void)setIsDebug:(bool)value;
 +(void)setAutoPhotosTestEnabled:(bool)value;
 +(bool)getAutoPhotosTestEnabled;
-+(bool)getIsDebug;
 +(BOOL)useInfinityBgState;
+
+#ifdef INTERNAL_USAGE
++(void)setDevAuthTo:(BOOL)isDevAuth;
+#endif
 
 @end
