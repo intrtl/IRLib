@@ -1,0 +1,1329 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "IrLib"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AiletInteractManager",
+        "printedName": "AiletInteractManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AiletInteractManager",
+                "printedName": "IrLib.AiletInteractManager",
+                "usr": "c:@M@IrLib@objc(cs)AiletInteractManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@IrLib@objc(cs)AiletInteractManager(im)init",
+            "mangledName": "$s5IrLib20AiletInteractManagerCACycfc",
+            "moduleName": "IrLib",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup(username:password:guestToken:externalUserId:notification:domainName:isMultiportal:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<(), IrLib.AiletError>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<(), IrLib.AiletError>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<(), IrLib.AiletError>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AiletError",
+                            "printedName": "IrLib.AiletError",
+                            "usr": "s:5IrLib10AiletErrorO"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5IrLib20AiletInteractManagerC5setup8username8password10guestToken14externalUserId12notification10domainName13isMultiportal10completionySS_S3SSgSSAMSbys6ResultOyytAA0C5ErrorOGcSgtFZ",
+            "mangledName": "$s5IrLib20AiletInteractManagerC5setup8username8password10guestToken14externalUserId12notification10domainName13isMultiportal10completionySS_S3SSgSSAMSbys6ResultOyytAA0C5ErrorOGcSgtFZ",
+            "moduleName": "IrLib",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(externalStoreId:externalVisitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5IrLib20AiletInteractManagerC5start15externalStoreId0g5VisitI0ySS_SStKFZ",
+            "mangledName": "$s5IrLib20AiletInteractManagerC5start15externalStoreId0g5VisitI0ySS_SStKFZ",
+            "moduleName": "IrLib",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showSummaryReport",
+            "printedName": "showSummaryReport(visitId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<(), IrLib.AiletError>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<(), IrLib.AiletError>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<(), IrLib.AiletError>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AiletError",
+                            "printedName": "IrLib.AiletError",
+                            "usr": "s:5IrLib10AiletErrorO"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5IrLib20AiletInteractManagerC17showSummaryReport7visitId10completionySS_ys6ResultOyytAA0C5ErrorOGcSgtFZ",
+            "mangledName": "$s5IrLib20AiletInteractManagerC17showSummaryReport7visitId10completionySS_ys6ResultOyytAA0C5ErrorOGcSgtFZ",
+            "moduleName": "IrLib",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncData",
+            "printedName": "syncData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5IrLib20AiletInteractManagerC8syncDatayyKFZ",
+            "mangledName": "$s5IrLib20AiletInteractManagerC8syncDatayyKFZ",
+            "moduleName": "IrLib",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup(userName:password:guestToken:externalUserId:notification:domainName:isMultiportal:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@IrLib@objc(cs)AiletInteractManager(cm)setupWithUserName:password:guestToken:externalUserId:notification:domainName:isMultiportal:completion:",
+            "mangledName": "$s5IrLib20AiletInteractManagerC5setup8userName8password10guestToken14externalUserId12notification06domainH013isMultiportal10completionySS_S3SSgSSAMSbySo7NSErrorCSgcSgtFZ",
+            "moduleName": "IrLib",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(externalStoreId:externalVisitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@IrLib@objc(cs)AiletInteractManager(cm)startWithExternalStoreId:externalVisitId:",
+            "mangledName": "$s5IrLib20AiletInteractManagerC5start15externalStoreId0g5VisitI0So7NSErrorCSgSS_SStFZ",
+            "moduleName": "IrLib",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showSummaryReport",
+            "printedName": "showSummaryReport(visitId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@IrLib@objc(cs)AiletInteractManager(cm)showSummaryReportWithVisitId:completion:",
+            "mangledName": "$s5IrLib20AiletInteractManagerC17showSummaryReport7visitId10completionySS_ySo7NSErrorCSgcSgtFZ",
+            "moduleName": "IrLib",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reports",
+            "printedName": "reports()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@IrLib@objc(cs)AiletInteractManager(cm)reports",
+            "mangledName": "$s5IrLib20AiletInteractManagerC7reportsSayypGyFZ",
+            "moduleName": "IrLib",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "frameworkVersion",
+            "printedName": "frameworkVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@IrLib@objc(cs)AiletInteractManager(cm)frameworkVersion",
+            "mangledName": "$s5IrLib20AiletInteractManagerC16frameworkVersionSSyFZ",
+            "moduleName": "IrLib",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@IrLib@objc(cs)AiletInteractManager",
+        "mangledName": "$s5IrLib20AiletInteractManagerC",
+        "moduleName": "IrLib",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "IrLib"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "IrLib"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AiletError",
+        "printedName": "AiletError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "busy",
+            "printedName": "busy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO4busyyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO4busyyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "empty",
+            "printedName": "empty",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO5emptyyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO5emptyyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "needRetake",
+            "printedName": "needRetake",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO10needRetakeyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO10needRetakeyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO7unknownyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO7unknownyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "noConnection",
+            "printedName": "noConnection",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO12noConnectionyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO12noConnectionyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "tokenError",
+            "printedName": "tokenError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO05tokenD0yA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO05tokenD0yA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "incorrectStoreId",
+            "printedName": "incorrectStoreId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO16incorrectStoreIdyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO16incorrectStoreIdyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "incorrectVisitId",
+            "printedName": "incorrectVisitId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO16incorrectVisitIdyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO16incorrectVisitIdyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "authError",
+            "printedName": "authError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO04authD0yA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO04authD0yA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "inProgress",
+            "printedName": "inProgress",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO10inProgressyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO10inProgressyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "notMultiportalMode",
+            "printedName": "notMultiportalMode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO18notMultiportalModeyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO18notMultiportalModeyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "incorrectPortal",
+            "printedName": "incorrectPortal",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO15incorrectPortalyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO15incorrectPortalyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Var",
+            "name": "emptyPortal",
+            "printedName": "emptyPortal",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrLib.AiletError.Type) -> IrLib.AiletError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AiletError",
+                    "printedName": "IrLib.AiletError",
+                    "usr": "s:5IrLib10AiletErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrLib.AiletError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AiletError",
+                        "printedName": "IrLib.AiletError",
+                        "usr": "s:5IrLib10AiletErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5IrLib10AiletErrorO11emptyPortalyA2CmF",
+            "mangledName": "$s5IrLib10AiletErrorO11emptyPortalyA2CmF",
+            "moduleName": "IrLib"
+          },
+          {
+            "kind": "Function",
+            "name": "code",
+            "printedName": "code()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5IrLib10AiletErrorO4codeSiyF",
+            "mangledName": "$s5IrLib10AiletErrorO4codeSiyF",
+            "moduleName": "IrLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AiletError",
+                "printedName": "IrLib.AiletError",
+                "usr": "s:5IrLib10AiletErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AiletError",
+                "printedName": "IrLib.AiletError",
+                "usr": "s:5IrLib10AiletErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5IrLib10AiletErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5IrLib10AiletErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "IrLib",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5IrLib10AiletErrorO9hashValueSivp",
+            "mangledName": "$s5IrLib10AiletErrorO9hashValueSivp",
+            "moduleName": "IrLib",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5IrLib10AiletErrorO9hashValueSivg",
+                "mangledName": "$s5IrLib10AiletErrorO9hashValueSivg",
+                "moduleName": "IrLib",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5IrLib10AiletErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s5IrLib10AiletErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "IrLib",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5IrLib10AiletErrorO",
+        "mangledName": "$s5IrLib10AiletErrorO",
+        "moduleName": "IrLib",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/alex\/source\/app-ios\/IrLib\/Public Interaction\/AiletInteractManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 904,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/source\/app-ios\/IrLib\/Public Interaction\/AiletInteractManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 935,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/source\/app-ios\/IrLib\/Public Interaction\/AiletInteractManager + Objc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 584,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/source\/app-ios\/IrLib\/Public Interaction\/AiletInteractManager + Objc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 615,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/source\/app-ios\/IrLib\/Public Interaction\/AiletInteractManager + Objc.swift",
+      "kind": "StringLiteral",
+      "offset": 1955,
+      "length": 17,
+      "value": "\"com.ailet.irlib\""
+    }
+  ]
+}

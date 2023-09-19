@@ -1,0 +1,51 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name IrLib
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import IrLib
+import Swift
+import _Concurrency
+import _StringProcessing
+public typealias AiletResultCompletion = (Swift.Result<Swift.Void, IrLib.AiletError>) -> Swift.Void
+public typealias AiletResultObjcCompletion = (Foundation.NSError?) -> Swift.Void
+@_inheritsConvenienceInitializers @objc final public class AiletInteractManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension IrLib.AiletInteractManager {
+  final public class func setup(username: Swift.String, password: Swift.String, guestToken: Swift.String, externalUserId: Swift.String?, notification: Swift.String, domainName: Swift.String?, isMultiportal: Swift.Bool, completion: IrLib.AiletResultCompletion?)
+  final public class func start(externalStoreId: Swift.String, externalVisitId: Swift.String) throws
+  final public class func showSummaryReport(visitId: Swift.String, completion: IrLib.AiletResultCompletion?)
+  final public class func syncData() throws
+}
+@objc extension IrLib.AiletInteractManager {
+  @objc final public class func setup(userName: Swift.String, password: Swift.String, guestToken: Swift.String, externalUserId: Swift.String?, notification: Swift.String, domainName: Swift.String?, isMultiportal: Swift.Bool, completion: IrLib.AiletResultObjcCompletion?)
+  @objc final public class func start(externalStoreId: Swift.String, externalVisitId: Swift.String) -> Foundation.NSError?
+  @objc final public class func showSummaryReport(visitId: Swift.String, completion: IrLib.AiletResultObjcCompletion?)
+  @objc final public class func reports() -> [Any]
+  @objc final public class func frameworkVersion() -> Swift.String
+}
+public enum AiletError : Swift.Error {
+  case busy
+  case empty
+  case needRetake
+  case unknown
+  case noConnection
+  case tokenError
+  case incorrectStoreId
+  case incorrectVisitId
+  case authError
+  case inProgress
+  case notMultiportalMode
+  case incorrectPortal
+  case emptyPortal
+  public func code() -> Swift.Int
+  public static func == (a: IrLib.AiletError, b: IrLib.AiletError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension IrLib.AiletError : Swift.Equatable {}
+extension IrLib.AiletError : Swift.Hashable {}

@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)didReceiveSyncInfoError:(IRSyncError)error;
 @end
 
-@interface IrCore : NSObject <TechSupportPresenter, StoresModuleOutput, TaskDetailsModuleOutput>
+@interface IrCore : NSObject <TechSupportPresenter, StoresModuleOutput, StoreDetailsOutput, TaskDetailsModuleOutput>
 
 @property (strong, nonatomic) Api *api;
 
@@ -133,29 +133,28 @@ FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
 -(void)initLocalNotification;
 -(void)startBg;
 -(void)resetBg;
--(long)syncCatalogs;
 
--(long)initIrWithUsername:(NSString*)username
-                  password:(NSString*)password
-                guestToken:(NSString *)guestToken
-           externalUserId:(NSString*)externalUserId
-              notification:(NSString*)notificationName
-               isForceInit:(BOOL)isForceInit
-                crashLimit:(int)crashLimit
-                domainName:(nullable NSString *)domainName
-            isMultiportal:(BOOL)isMultiportal;
+-(long)setupWithUsername:(NSString*)username
+                password:(NSString*)password
+              guestToken:(NSString *)guestToken
+          externalUserId:(nullable NSString*)externalUserId
+            notification:(NSString*)notificationName
+             isForceInit:(BOOL)isForceInit
+              crashLimit:(int)crashLimit
+              domainName:(nullable NSString *)domainName
+           isMultiportal:(BOOL)isMultiportal;
 
 /// 
--(void)initIrWithUsername:(NSString*)username
-                 password:(NSString*)password
-               guestToken:(NSString *)guestToken
-           externalUserId:(NSString*)externalUserId
-             notification:(NSString*)notificationName
-              isForceInit:(BOOL)isForceInit
-               crashLimit:(int)crashLimit
-               domainName:(nullable NSString *)domainName
-            isMultiportal:(BOOL)isMultiportal
-               completion:(SetupCompletionHandler)completion;
+-(void)setupWithUsername:(NSString*)username
+                password:(NSString*)password
+              guestToken:(NSString *)guestToken
+          externalUserId:(nullable NSString*)externalUserId
+            notification:(NSString*)notificationName
+             isForceInit:(BOOL)isForceInit
+              crashLimit:(int)crashLimit
+              domainName:(nullable NSString *)domainName
+           isMultiportal:(BOOL)isMultiportal
+              completion:(SetupCompletionHandler)completion;
 
 - (long)setPortal:(NSString *)portalId;
 
@@ -196,7 +195,6 @@ isForceStart:(BOOL)isForceStart;
 -(IRSyncInfoPresentableEntity *)syncInfo;
 - (void)startSync;
 - (void)loadAllCatalogsWithCompletion:(void(^)(long))completion;
-- (long)libSync:(long)result;
 - (void)startForcePhotoSync;
 
 - (void)setIsApp;

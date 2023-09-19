@@ -19,7 +19,6 @@
 +(void)initLocalNotification;
 +(void)startBg;
 +(void)resetBg;
-+(long)syncCatalogs;
 
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
