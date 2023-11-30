@@ -1285,45 +1285,990 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "IrLib"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "IrLib"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "IrLib"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "IrLib"
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/alex\/source\/app-ios\/IrLib\/Public Interaction\/AiletInteractManager.swift",
+      "filePath": "\/Users\/ashmakov\/Documents\/Projects\/Intrtl\/retail-app-ios\/IrLib\/Public Interaction\/AiletInteractManager.swift",
       "kind": "BooleanLiteral",
       "offset": 904,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/source\/app-ios\/IrLib\/Public Interaction\/AiletInteractManager.swift",
+      "filePath": "\/Users\/ashmakov\/Documents\/Projects\/Intrtl\/retail-app-ios\/IrLib\/Public Interaction\/AiletInteractManager.swift",
       "kind": "IntegerLiteral",
       "offset": 935,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/alex\/source\/app-ios\/IrLib\/Public Interaction\/AiletInteractManager + Objc.swift",
+      "filePath": "\/Users\/ashmakov\/Documents\/Projects\/Intrtl\/retail-app-ios\/IrLib\/Public Interaction\/AiletInteractManager + Objc.swift",
       "kind": "BooleanLiteral",
       "offset": 584,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/source\/app-ios\/IrLib\/Public Interaction\/AiletInteractManager + Objc.swift",
+      "filePath": "\/Users\/ashmakov\/Documents\/Projects\/Intrtl\/retail-app-ios\/IrLib\/Public Interaction\/AiletInteractManager + Objc.swift",
       "kind": "IntegerLiteral",
       "offset": 615,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/alex\/source\/app-ios\/IrLib\/Public Interaction\/AiletInteractManager + Objc.swift",
+      "filePath": "\/Users\/ashmakov\/Documents\/Projects\/Intrtl\/retail-app-ios\/IrLib\/Public Interaction\/AiletInteractManager + Objc.swift",
       "kind": "StringLiteral",
       "offset": 1955,
       "length": 17,
       "value": "\"com.ailet.irlib\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 715,
+      "length": 3,
+      "value": "\"I\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 886,
+      "length": 33,
+      "value": "\"baseline_filter_list_white_24pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1037,
+      "length": 6,
+      "value": "\"grid\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1166,
+      "length": 9,
+      "value": "\"grid_50\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1311,
+      "length": 15,
+      "value": "\"iTunesArtwork\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1472,
+      "length": 22,
+      "value": "\"ic_add_a_photo_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1643,
+      "length": 24,
+      "value": "\"ic_add_a_photo_white-1\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1822,
+      "length": 27,
+      "value": "\"ic_add_a_photo_white_48pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2009,
+      "length": 29,
+      "value": "\"ic_add_circle_outline_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2179,
+      "length": 19,
+      "value": "\"ic_alarm_on_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2342,
+      "length": 21,
+      "value": "\"ic_alarm_on_white-1\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2508,
+      "length": 21,
+      "value": "\"ic_alarm_white_48pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2648,
+      "length": 7,
+      "value": "\"ic_ar\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2789,
+      "length": 15,
+      "value": "\"ic_arrow_back\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2958,
+      "length": 26,
+      "value": "\"ic_arrow_drop_down_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3151,
+      "length": 33,
+      "value": "\"ic_arrow_forward_ios_white_24pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3325,
+      "length": 19,
+      "value": "\"ic_arrow_up_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3471,
+      "length": 11,
+      "value": "\"ic_arrows\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3628,
+      "length": 21,
+      "value": "\"ic_assortment_error\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3822,
+      "length": 36,
+      "value": "\"ic_baseline_attach_file_white_24pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4007,
+      "length": 23,
+      "value": "\"ic_border_color_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4151,
+      "length": 8,
+      "value": "\"ic_bug\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4299,
+      "length": 18,
+      "value": "\"ic_camera_accept\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4453,
+      "length": 16,
+      "value": "\"ic_camera_crop\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4628,
+      "length": 28,
+      "value": "\"ic_camera_crop_highlighted\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4796,
+      "length": 18,
+      "value": "\"ic_camera_delete\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4969,
+      "length": 26,
+      "value": "\"ic_camera_download_arrow\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5133,
+      "length": 17,
+      "value": "\"ic_camera_flash\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5297,
+      "length": 22,
+      "value": "\"ic_camera_flash_auto\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5464,
+      "length": 21,
+      "value": "\"ic_camera_flash_off\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5642,
+      "length": 27,
+      "value": "\"ic_camera_horizon_invalid\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5822,
+      "length": 25,
+      "value": "\"ic_camera_horizon_valid\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5994,
+      "length": 22,
+      "value": "\"ic_camera_info_photo\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6174,
+      "length": 28,
+      "value": "\"ic_camera_info_right_arrow\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6349,
+      "length": 22,
+      "value": "\"ic_camera_info_shelf\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6515,
+      "length": 20,
+      "value": "\"ic_camera_panorama\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6702,
+      "length": 32,
+      "value": "\"ic_camera_panorama_highlighted\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6872,
+      "length": 17,
+      "value": "\"ic_camera_photo\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7031,
+      "length": 19,
+      "value": "\"ic_camera_refresh\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7188,
+      "length": 17,
+      "value": "\"ic_camera_shoot\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7356,
+      "length": 24,
+      "value": "\"ic_camera_upload_arrow\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7525,
+      "length": 21,
+      "value": "\"ic_chart_white_24pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7671,
+      "length": 10,
+      "value": "\"ic_check\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7817,
+      "length": 16,
+      "value": "\"ic_check_green\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7958,
+      "length": 10,
+      "value": "\"ic_clear\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8102,
+      "length": 15,
+      "value": "\"ic_cold_shelf\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8265,
+      "length": 22,
+      "value": "\"ic_collections_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8438,
+      "length": 24,
+      "value": "\"ic_content_paste_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8622,
+      "length": 29,
+      "value": "\"ic_control_point_white_48pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8774,
+      "length": 9,
+      "value": "\"ic_crop\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8921,
+      "length": 17,
+      "value": "\"ic_delete_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9086,
+      "length": 22,
+      "value": "\"ic_description_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9240,
+      "length": 14,
+      "value": "\"ic_dns_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9388,
+      "length": 15,
+      "value": "\"ic_done_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9539,
+      "length": 16,
+      "value": "\"ic_edit_pencil\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9715,
+      "length": 29,
+      "value": "\"ic_error_outline_white_24pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9889,
+      "length": 21,
+      "value": "\"ic_error_white_48pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10050,
+      "length": 18,
+      "value": "\"ic_file_download\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10219,
+      "length": 24,
+      "value": "\"ic_file_download_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10390,
+      "length": 22,
+      "value": "\"ic_file_upload_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10539,
+      "length": 11,
+      "value": "\"ic_filter\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10695,
+      "length": 21,
+      "value": "\"ic_flash_auto_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10859,
+      "length": 20,
+      "value": "\"ic_flash_off_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11020,
+      "length": 19,
+      "value": "\"ic_flash_on_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11166,
+      "length": 11,
+      "value": "\"ic_folder\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11325,
+      "length": 23,
+      "value": "\"ic_grid_on_white_48pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11473,
+      "length": 10,
+      "value": "\"ic_group\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11634,
+      "length": 24,
+      "value": "\"ic_highlight_off_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11818,
+      "length": 29,
+      "value": "\"ic_highlight_off_white_48pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12009,
+      "length": 30,
+      "value": "\"ic_keyboard_arrow_left_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12175,
+      "length": 16,
+      "value": "\"ic_label_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12342,
+      "length": 24,
+      "value": "\"ic_not_interested_48pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12495,
+      "length": 12,
+      "value": "\"ic_offline\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12670,
+      "length": 30,
+      "value": "\"ic_panorama_horizontal_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12872,
+      "length": 35,
+      "value": "\"ic_panorama_horizontal_white_48px\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13039,
+      "length": 14,
+      "value": "\"ic_photo_add\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13195,
+      "length": 19,
+      "value": "\"ic_photo_approved\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13354,
+      "length": 18,
+      "value": "\"ic_photo_camera2\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13521,
+      "length": 23,
+      "value": "\"ic_photo_camera_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13680,
+      "length": 16,
+      "value": "\"ic_photo_error\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13847,
+      "length": 24,
+      "value": "\"ic_photo_library_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14011,
+      "length": 18,
+      "value": "\"ic_photo_pending\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14191,
+      "length": 30,
+      "value": "\"ic_play_circle_outline_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14370,
+      "length": 23,
+      "value": "\"ic_refresh_white_48pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14531,
+      "length": 17,
+      "value": "\"ic_replay_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14695,
+      "length": 22,
+      "value": "\"ic_replay_white_48pt\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14842,
+      "length": 10,
+      "value": "\"ic_scene\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14986,
+      "length": 15,
+      "value": "\"ic_send_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15132,
+      "length": 13,
+      "value": "\"ic_settings\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15304,
+      "length": 28,
+      "value": "\"ic_settings_overscan_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15470,
+      "length": 17,
+      "value": "\"ic_stats_camera\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15646,
+      "length": 28,
+      "value": "\"ic_stats_category_approved\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15827,
+      "length": 25,
+      "value": "\"ic_stats_category_error\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16005,
+      "length": 25,
+      "value": "\"ic_stats_crossed_camera\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16170,
+      "length": 18,
+      "value": "\"ic_stats_diagram\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16311,
+      "length": 9,
+      "value": "\"ic_stop\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16484,
+      "length": 31,
+      "value": "\"ic_store_mall_directory_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16651,
+      "length": 16,
+      "value": "\"ic_store_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16803,
+      "length": 16,
+      "value": "\"ic_tasks_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16969,
+      "length": 23,
+      "value": "\"ic_techsupport_button\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17137,
+      "length": 21,
+      "value": "\"ic_view_comfy_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17305,
+      "length": 22,
+      "value": "\"ic_view_module_white\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17447,
+      "length": 10,
+      "value": "\"no_image\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17615,
+      "length": 27,
+      "value": "\"reports-availability-icon\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17803,
+      "length": 29,
+      "value": "\"reports-closed-section-icon\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17978,
+      "length": 21,
+      "value": "\"reports-filter-icon\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18145,
+      "length": 21,
+      "value": "\"reports-images-icon\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18308,
+      "length": 19,
+      "value": "\"reports-info-icon\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18488,
+      "length": 29,
+      "value": "\"reports-opened-section-icon\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18673,
+      "length": 27,
+      "value": "\"reports-out-of-shelf-icon\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 18863,
+      "length": 30,
+      "value": "\"reports-price-execution-icon\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19015,
+      "length": 8,
+      "value": "\"slide1\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19151,
+      "length": 11,
+      "value": "\"slide1eng\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19284,
+      "length": 8,
+      "value": "\"slide2\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19420,
+      "length": 11,
+      "value": "\"slide2eng\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19553,
+      "length": 8,
+      "value": "\"slide3\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19689,
+      "length": 11,
+      "value": "\"slide3eng\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19822,
+      "length": 8,
+      "value": "\"slide4\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 19958,
+      "length": 11,
+      "value": "\"slide4eng\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 20091,
+      "length": 8,
+      "value": "\"slide5\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 20227,
+      "length": 11,
+      "value": "\"slide5eng\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 20360,
+      "length": 8,
+      "value": "\"slide6\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 20496,
+      "length": 11,
+      "value": "\"slide6eng\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 20629,
+      "length": 8,
+      "value": "\"slide7\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 20765,
+      "length": 11,
+      "value": "\"slide7eng\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 20898,
+      "length": 8,
+      "value": "\"slide8\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 21034,
+      "length": 11,
+      "value": "\"slide8eng\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 21167,
+      "length": 8,
+      "value": "\"slide9\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 21303,
+      "length": 11,
+      "value": "\"slide9eng\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 21462,
+      "length": 22,
+      "value": "\"stat_card_background\""
+    },
+    {
+      "filePath": "\/var\/root\/Library\/Developer\/Xcode\/DerivedData\/IntelligenceRetail-gqcmlssnnunbhsdtllvrzcgrvmkv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrLib-Release\/IntermediateBuildFilesPath\/IntelligenceRetail.build\/Release-iphonesimulator\/IrLib.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 21602,
+      "length": 6,
+      "value": "\"test\""
     }
   ]
 }
