@@ -18,6 +18,6 @@ Pod::Spec.new do |spec|
   spec.dependency "BugfenderSDK", "1.13.2"
   spec.dependency "Amplitude", "~> 8.8.0"
   spec.dependency "IrLibSwift", "5.8.0-beta"
-  spec.dependency "RealmSwift", "10.47.0"
-  spec.dependency "Realm", "10.47.0"
+  spec.dependency "IRRealmSwift", "10.47.0"
+  spec.dependency "IRRealm", "10.47.0"
 end
