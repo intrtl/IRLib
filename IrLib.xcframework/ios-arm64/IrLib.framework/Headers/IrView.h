@@ -10,6 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "IrLastVisit.h"
 #import "IrCore.h"
+#import <Realm/Realm.h>
+
+@class RLMObject;
 
 @interface IrView : NSObject
 
@@ -118,8 +121,8 @@ isForceStart:(BOOL)isForceStart;
 +(NSDictionary *)reports:(NSString *)external_visit_id
                  isLogOn:(BOOL)isLogOn;
 +(long)syncData;
-+(long)loadSamples;
-+(long)loadSamples:(void (^)(bool isAllLoaded))callback;
+//+(long)loadSamples;
+//+(long)loadSamples:(void (^)(bool isAllLoaded))callback;
 +(void)resetDB;
 +(BOOL)isNeedSyncData;
 +(long)getNotSentImagesCnt;

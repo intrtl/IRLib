@@ -23,13 +23,6 @@ extension IrLib.AiletInteractManager {
   final public class func showSummaryReport(visitId: Swift.String, completion: IrLib.AiletResultCompletion?)
   final public class func syncData() throws
 }
-@objc extension IrLib.AiletInteractManager {
-  @objc final public class func setup(userName: Swift.String, password: Swift.String, guestToken: Swift.String, externalUserId: Swift.String?, notification: Swift.String, domainName: Swift.String?, isMultiportal: Swift.Bool, completion: IrLib.AiletResultObjcCompletion?)
-  @objc final public class func start(externalStoreId: Swift.String, externalVisitId: Swift.String) -> Foundation.NSError?
-  @objc final public class func showSummaryReport(visitId: Swift.String, completion: IrLib.AiletResultObjcCompletion?)
-  @objc final public class func reports() -> [Any]
-  @objc final public class func frameworkVersion() -> Swift.String
-}
 public enum AiletError : Swift.Error {
   case busy
   case empty

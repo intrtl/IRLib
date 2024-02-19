@@ -277,7 +277,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -305,17 +304,6 @@ SWIFT_CLASS("_TtC5IrLib20AiletInteractManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-@class NSString;
-@class NSError;
-
-@interface AiletInteractManager (SWIFT_EXTENSION(IrLib))
-+ (void)setupWithUserName:(NSString * _Nonnull)userName password:(NSString * _Nonnull)password guestToken:(NSString * _Nonnull)guestToken externalUserId:(NSString * _Nullable)externalUserId notification:(NSString * _Nonnull)notification domainName:(NSString * _Nullable)domainName isMultiportal:(BOOL)isMultiportal completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-+ (NSError * _Nullable)startWithExternalStoreId:(NSString * _Nonnull)externalStoreId externalVisitId:(NSString * _Nonnull)externalVisitId SWIFT_WARN_UNUSED_RESULT;
-+ (void)showSummaryReportWithVisitId:(NSString * _Nonnull)visitId completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-+ (NSArray * _Nonnull)reports SWIFT_WARN_UNUSED_RESULT;
-+ (NSString * _Nonnull)frameworkVersion SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 

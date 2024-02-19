@@ -171,8 +171,6 @@ isForceStart:(BOOL)isForceStart;
 -(NSDictionary *)reports:(NSString *)external_visit_id
                  isLogOn:(BOOL)isLogOn;
 -(long)sendUnsentDataIfNeeded;
--(long)loadSamples;
--(long)loadSamples:(void (^)(bool isAllLoaded))callback;
 -(void)resetDB;
 -(BOOL)isNeedSyncData;
 -(long)getNotSentImagesCnt;
@@ -215,7 +213,7 @@ isForceStart:(BOOL)isForceStart;
 
 - (void)restartSendPhotoSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
 
-- (void)downloadPreviousVisitWithExternalId:(NSString *)externalId completion:(PreviousVisitObtainResultHandler)completion;
+- (void)previousVisitWithExternalId:(NSString *)externalId completion:(PreviousVisitObtainResultHandler)completion;
 
 - (void)restartSendSceneAttributesSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
 

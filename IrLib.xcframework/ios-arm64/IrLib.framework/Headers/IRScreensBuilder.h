@@ -23,7 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIViewController *)selectStoreViewController;
 
 - (UIViewController *)assortmentReportViewController;
-- (UIViewController *)matrixViewControllerForStoreId:(NSInteger)storeId shouldReloadDataAfterAppear:(BOOL)shouldReloadData;
 - (id<WidgetsModuleInput>)widgetsController;
 - (UIViewController *)storeDetailViewControllerWithIrCore:(IrCore *)irCore storeId:(NSInteger)storeId;
 - (UIViewController *)taskDetailViewControllerWithIrCore:(IrCore *)irCore
