@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = "IrLib.xcframework"
   spec.frameworks = "CoreMotion", "UserNotifications"
   spec.dependency "AppCenter", "~> 4.4.2"
+  spec.dependency "OpenCV2", "~> 4.3.0"
   spec.dependency "BugfenderSDK", "1.13.2"
   spec.dependency "Amplitude", "~> 8.8.0"
   spec.dependency "IrLibSwift", "= #{spec.version}"
