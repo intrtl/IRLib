@@ -10,7 +10,7 @@
 #define AiletFeatureToggle_h
 
 #ifdef AILET_OFFLINE_RECOGNITION
-#import <IrLibSwift/IrLibSwift-Swift-Fixed.h>
+#import <IrLibSwiftWithOffline/IrLibSwift-Swift-Fixed.h>
 #else
 #import <IrLibSwift/IrLibSwift-Swift-Fixed.h>
 #endif
