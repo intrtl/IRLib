@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.dependency "AppCenter", "~> 4.4.2"
   spec.dependency "BugfenderSDK", "1.13.2"
   spec.dependency "Amplitude", "~> 8.8.0"
-  spec.dependency "IrLibSwift", spec.version
+  spec.dependency "IrLibSwift", "= #{spec.version}"
   spec.dependency "Realm", "10.48.1-xcframework"
   spec.dependency "RealmSwift", "10.48.1-xcframework"
 end
