@@ -117,7 +117,6 @@ FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
 -(void)showReportPhotoBrowseViewControllerWithParent:(nullable UIViewController *)parent
                                               taskId:(nullable NSString *)taskId;
 
--(void)showReportsViewController;
 -(void)closeVisit;
 - (void)initAsLib;
 -(void)initAsApp;

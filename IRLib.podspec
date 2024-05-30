@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "IRLib"
-  spec.version      = "5.9.2" 
+  spec.version      = "5.9.8" 
   spec.summary      = "Framework for Ailet functionality integration"
   spec.static_framework = true;
   spec.description  = <<-DESC
@@ -18,6 +18,6 @@ Pod::Spec.new do |spec|
   spec.dependency "BugfenderSDK", "1.13.2"
   spec.dependency "Amplitude", "~> 8.8.0"
   spec.dependency "IrLibSwift", "= #{spec.version}"
-  spec.dependency "Realm", "10.48.1-xcframework"
-  spec.dependency "RealmSwift", "10.48.1-xcframework"
+  spec.dependency "Realm", "10.50.1-xcframework"
+  spec.dependency "RealmSwift", "10.50.1-xcframework"
 end
