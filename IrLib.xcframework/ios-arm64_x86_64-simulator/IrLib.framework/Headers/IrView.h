@@ -8,17 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "IrLastVisit.h"
-#import "IrCore.h"
 #import <Realm/Realm.h>
 
 @class RLMObject;
 
+__attribute__((deprecated("Use IRInteractManager from IrLibSwift instead of this class")))
 @interface IrView : NSObject
 
-+(int)dbVersion;
-+(void)initRealm;
-+(void)initRealm:(BOOL)isSeparatedBase;
++(int)dbVersion __attribute__((deprecated("Use IRInteractManager `frameworkVersion` method from IrLibSwift instead of this class")));
 +(void)initLocalNotification;
 +(void)startBg;
 +(void)resetBg;
@@ -27,7 +24,8 @@
    password:(NSString*)user_password_
  guestToken:(NSString *)guestToken
 notification:(NSString*)notificationName
-isMultiportal:(BOOL)isMultiportal;
+isMultiportal:(BOOL)isMultiportal
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
@@ -35,14 +33,17 @@ isMultiportal:(BOOL)isMultiportal;
 notification:(NSString*)notificationName
 isForceInit:(BOOL)isForceInit
  crashLimit:(int)crashLimit
-isMultiportal:(BOOL)isMultiportal;
+isMultiportal:(BOOL)isMultiportal
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
  guestToken:(NSString *)guestToken
 external_user_id:(NSString*)external_user_id_
 notification:(NSString*)notificationName
-isMultiportal:(BOOL)isMultiportal;
+isMultiportal:(BOOL)isMultiportal
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
+
 
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
@@ -51,25 +52,30 @@ external_user_id:(NSString*)external_user_id_
 notification:(NSString*)notificationName
 isForceInit:(BOOL)isForceInit
  crashLimit:(int)crashLimit
-isMultiportal:(BOOL)isMultiportal;
+isMultiportal:(BOOL)isMultiportal
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
     guestToken:(NSString *)guestToken
-  notification:(NSString*)notificationName;
+  notification:(NSString*)notificationName
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
     guestToken:(NSString *)guestToken
   notification:(NSString*)notificationName
    isForceInit:(BOOL)isForceInit
-    crashLimit:(int)crashLimit;
+    crashLimit:(int)crashLimit
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
     guestToken:(NSString *)guestToken
 external_user_id:(NSString*)external_user_id_
-  notification:(NSString*)notificationName;
+  notification:(NSString*)notificationName
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
+
 
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
@@ -77,25 +83,29 @@ external_user_id:(NSString*)external_user_id_
 external_user_id:(NSString*)external_user_id_
   notification:(NSString*)notificationName
    isForceInit:(BOOL)isForceInit
-    crashLimit:(int)crashLimit;
+    crashLimit:(int)crashLimit
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
  guestToken:(NSString *)guestToken
-notification:(NSString*)notificationName;
+notification:(NSString*)notificationName
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
  guestToken:(NSString *)guestToken
 notification:(NSString*)notificationName
 isForceInit:(BOOL)isForceInit
- crashLimit:(int)crashLimit;
+ crashLimit:(int)crashLimit
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
  guestToken:(NSString *)guestToken
 external_user_id:(NSString*)external_user_id_
-notification:(NSString*)notificationName;
+notification:(NSString*)notificationName
+__attribute__((deprecated("Use IRInteractManager setup method from IrLibSwift instead of this class")));
 
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
@@ -103,31 +113,39 @@ notification:(NSString*)notificationName;
 external_user_id:(NSString*)external_user_id_
 notification:(NSString*)notificationName
 isForceInit:(BOOL)isForceInit
- crashLimit:(int)crashLimit;
-
-+(long)start:(UIViewController*)view_
-external_store_id:(NSString*)external_store_id
-external_visit_id:(NSString*)external_visit_id;
+ crashLimit:(int)crashLimit
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)start:(UIViewController*)view_
 external_store_id:(NSString*)external_store_id
 external_visit_id:(NSString*)external_visit_id
-isForceStart:(BOOL)isForceStart;
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
+
++(long)start:(UIViewController*)view_
+external_store_id:(NSString*)external_store_id
+external_visit_id:(NSString*)external_visit_id
+isForceStart:(BOOL)isForceStart
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)showSummaryReport:(UIViewController*)view_
-                visit_id:(NSString *)external_visit_id;
-+(NSArray *)reports;
-+(NSDictionary *)reports:(NSString *)external_visit_id;
+                visit_id:(NSString *)external_visit_id
+__attribute__((deprecated("Use IRInteractManager `showSummaryReport` method from IrLibSwift instead of this class")));
+
++(NSArray *)reports
+__attribute__((deprecated("Use IRInteractManager `reports` method from IrLibSwift instead of this class")));
+
 +(NSDictionary *)reports:(NSString *)external_visit_id
-                 isLogOn:(BOOL)isLogOn;
-+(long)syncData;
-//+(long)loadSamples;
-//+(long)loadSamples:(void (^)(bool isAllLoaded))callback;
-+(void)resetDB;
+__attribute__((deprecated("Use IRInteractManager `reportWithVisitId` method from IrLibSwift instead of this class")));
+
++(NSDictionary *)reports:(NSString *)external_visit_id
+                 isLogOn:(BOOL)isLogOn
+__attribute__((deprecated("Use IRInteractManager `reportWithVisitId` method from IrLibSwift instead of this class")));
+
++(long)syncData
+__attribute__((deprecated("Use IRInteractManager `syncData` method from IrLibSwift instead of this class")));
+
 +(BOOL)isNeedSyncData;
-+(long)getNotSentImagesCnt;
 +(void)startLocalNotification;
-+(IrLastVisit *)getLastVisit:(NSString *)external_store_id;
 +(NSString *)frameworkVersion;
 +(void)useInfinityBg:(BOOL)use;
 +(void)initAnalytics;
@@ -135,20 +153,23 @@ isForceStart:(BOOL)isForceStart;
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
   notification:(NSString*)notificationName
- isMultiportal:(BOOL)isMultiportal;
+ isMultiportal:(BOOL)isMultiportal
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
   notification:(NSString*)notificationName
    isForceInit:(BOOL)isForceInit
     crashLimit:(int)crashLimit
- isMultiportal:(BOOL)isMultiportal;
+ isMultiportal:(BOOL)isMultiportal
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
 external_user_id:(NSString*)external_user_id_
   notification:(NSString*)notificationName
- isMultiportal:(BOOL)isMultiportal;
+ isMultiportal:(BOOL)isMultiportal
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)initLib:(NSString*)user_name_
       password:(NSString*)user_password_
@@ -156,7 +177,8 @@ external_user_id:(NSString*)external_user_id_
   notification:(NSString*)notificationName
    isForceInit:(BOOL)isForceInit
     crashLimit:(int)crashLimit
- isMultiportal:(BOOL)isMultiportal;
+ isMultiportal:(BOOL)isMultiportal
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
@@ -166,13 +188,12 @@ notification:(NSString*)notificationName
 isForceInit:(BOOL)isForceInit
  crashLimit:(int)crashLimit
  domainName:(nullable NSString *)domainName
-isMultiportal:(BOOL)isMultiportal;
+isMultiportal:(BOOL)isMultiportal
+__attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift instead of this class")));
 
-+ (long)setPortal:(nonnull NSString *)portalId;
++ (long)setPortal:(nonnull NSString *)portalId
+__attribute__((deprecated("Use IRInteractManager `updateActivePortal` method from IrLibSwift instead of this class")));
 
-+(void)doDebugCommand;
-+(void)setAutoPhotosTestEnabled:(bool)value;
-+(bool)getAutoPhotosTestEnabled;
 +(BOOL)useInfinityBgState;
 
 #ifdef INTERNAL_USAGE

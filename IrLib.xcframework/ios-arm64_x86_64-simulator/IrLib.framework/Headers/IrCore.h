@@ -9,43 +9,19 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "IRSyncInfoPresentableEntity.h"
-#import "IRUserDefinedSettings.h"
-#import "IrLastVisit.h"
-#import "TechSupportPresenter.h"
 #import "AiletFeatureToggle.h"
 
-@class SelectStoreTableViewController;
-@class Api;
-@class CatalogNetworkService;
 @class IRLibServicesBuilder;
-@protocol IRStoreService;
 @protocol IRDataManagerProtocol;
-@protocol SyncService;
-@protocol CameraModuleOutput;
 typedef void(^SetupCompletionHandler)(long);
-typedef void(^PreviousVisitObtainResultHandler)(NSString * _Nullable, NSError * _Nullable);
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol IrCoreDelegate <NSObject>
-@optional
--(void)showOnline;
--(void)showOffline;
--(void)updateContent;
--(void)showSettingsErrorAlert;
--(void)didUpdateSyncInfo;
--(void)didReceiveSyncInfoError:(IRSyncError)error;
-@end
-
-@interface IrCore : NSObject <TechSupportPresenter, StoresModuleOutput, StoreDetailsOutput, TaskDetailsModuleOutput>
-
-@property (strong, nonatomic) Api *api;
+@interface IrCore : NSObject
 
 @property (nonatomic, copy, nullable) void(^authErrorHandler)(void);
 @property (nonatomic, copy, nullable) void(^showSyncStatsScreenHandler)(void);
 
-@property (weak, nonatomic) id<IrCoreDelegate> delegate;
 FOUNDATION_EXPORT int const IR_ERROR_BUSY;
 FOUNDATION_EXPORT int const IR_RESULT_OK;
 FOUNDATION_EXPORT int const IR_RESULT_EMPTY;
@@ -84,54 +60,23 @@ FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 
-- (instancetype)init:(id)parent
-        isSeparated:(bool)isSeparated
-        storeService:(id<IRStoreService>)storeService
-                api:(Api *)api
-        syncService:(id<SyncService>)syncService
-      catalogService:(CatalogNetworkService *)catalogService
+- (instancetype)init:(BOOL)isSeparated
      servicesBuilder:(IRLibServicesBuilder *)servicesBuilder;
 
-- (instancetype)init:(id)parent
-         isSeparated:(bool)isSeparated
+- (instancetype)init:(BOOL)isSeparated
         dataManager:(id<IRDataManagerProtocol>)dataManager
-       storeService:(id<IRStoreService>)storeService
-                api:(Api *)api
-         syncService:(id<SyncService>)syncService
-      catalogService:(CatalogNetworkService *)catalogService
      servicesBuilder:(IRLibServicesBuilder *)servicesBuilder;
 
 #pragma mark - Instance methods
 
--(void)initAndShowCameraViewControllerWithExternalVisitId:(nonnull NSString *)externalVisitId
-                                          externalStoreId:(nonnull NSString *)externalStoreId
-                                                   taskId:(nullable NSString *)taskId;
--(void)showCameraViewControllerWithExternalVisitId:(nonnull NSString *)externalVisitId
-                                   externalStoreId:(nonnull NSString *)externalStoreId
-                                            taskId:(nullable NSString *)taskId;
--(void)showCameraViewControllerWithParent:(id)parent
-                          externalVisitId:(nonnull NSString *)externalVisitId
-                          externalStoreId:(nonnull NSString *)externalStoreId
-                                   taskId:(nullable NSString *)taskId;
+-(void)showReportsViewController;
 
--(void)showReportPhotoBrowseViewControllerWithParent:(nullable UIViewController *)parent
-                                              taskId:(nullable NSString *)taskId;
-
--(void)closeVisit;
-- (void)initAsLib;
--(void)initAsApp;
--(void)initTimers;
--(void)stopTimers;
-- (void)stopSyncMonitoring;
--(void)stopReportTimeTracking;
--(void)startReportTimeTracking;
-
-//IrView --------------------------------
 -(int)dbVersion;
--(void)setParent:(id)parent;
 -(void)initLocalNotification;
 -(void)startBg;
 -(void)resetBg;
+
+// MARK: - Lib interaction methods
 
 -(long)setupWithUsername:(NSString*)username
                 password:(NSString*)password
@@ -157,68 +102,23 @@ FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
 
 - (long)setPortal:(NSString *)portalId;
 
--(long)start:(NSString*)external_store_id
-external_visit_id:(NSString*)external_visit_id;
--(long)start:(NSString*)external_store_id
-external_visit_id:(NSString*)external_visit_id
-isForceStart:(BOOL)isForceStart;
-- (long)showSummaryReport:(NSString *)external_visit_id;
-- (void)showSummaryReport:(NSString *)externalVisitId completion:(void(^)(NSInteger))completion;
+- (long)startIn:(nonnull UIViewController *)presentingVC withExternalStoreId:(NSString *)externalStoreId externalVisitId:(NSString*)externalVisitId;
+- (long)showSummaryReportIn:(UIViewController *)presentingVC externalVisitId:(NSString *)externalVisitId;
+
 -(NSArray *)reports;
--(NSDictionary *)reports:(NSString *)external_visit_id;
--(NSDictionary *)reports:(NSString *)external_visit_id internalTaskId:(NSString * _Nullable)internalTaskId;
--(NSDictionary *)reports:(NSString *)external_visit_id
-                 isLogOn:(BOOL)isLogOn;
+-(NSDictionary *)reportsWithExternalVisitId:(NSString *)externalVisitId internalTaskId:(NSString * _Nullable)internalTaskId;
+
 -(long)sendUnsentDataIfNeeded;
--(void)resetDB;
 -(BOOL)isNeedSyncData;
--(long)getNotSentImagesCnt;
 -(void)startLocalNotification;
--(IrLastVisit *)getLastVisit:(NSString *)external_store_id;
 -(NSString *)frameworkVersion;
 -(BOOL)useInfinityBgState;
 -(void)useInfinityBg:(BOOL)use;
 -(void)initAnalytics;
 -(void)doDebugCommand;
--(void)clearDataAfterLogout;
--(NSString *)getStats;
--(NSString *)getLanguage;
 -(NSString*)getVersion;
 -(void)startSendAndRecive;
 -(long)getCurrentStoreId;
--(bool)getAutoPhotosTestEnabled;
--(void)setAutoPhotosTestEnabled:(bool)value;
--(void)fetchAppSettings;
--(IRSyncInfoPresentableEntity *)syncInfo;
-- (void)startSync;
-- (void)loadAllCatalogsWithCompletion:(void(^)(long))completion;
-- (void)startForcePhotoSync;
-
-- (void)setIsApp;
-- (BOOL)isStartedFromDeeplink;
-- (void)setStartedFromDeeplink:(BOOL)isStartedViaDeeplink;
-- (nullable UIViewController *)
-    configuredVisitStartControllerForExternalStoreId:(NSString *)external_store_id
-                                     externalVisitId:(NSString *)external_visit_id
-                                              taskId:(NSString * _Nullable)taskId
-                                        isForceStart:(BOOL)isForceStart
-                                        cameraOutput:(id<CameraModuleOutput>)cameraOutput
-                                backButtonTapHandler:(void(^_Nullable)(void))backButtonTapHandler
-                                               error:(NSError **)error;
-- (BOOL)shouldSyncManually;
-- (void)showTechSupportScreen;
-- (void)updateDeviceToken:(NSData *)deviceToken;
-- (void)updateGetPhotoResultIntervals:(NSArray *)intervals;
-
-- (void)restartSendPhotoSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
-
-- (void)previousVisitWithExternalId:(NSString *)externalId completion:(PreviousVisitObtainResultHandler)completion;
-
-- (void)restartSendSceneAttributesSequenceWithUpdateHandler:(nullable void(^)(NSError * _Nullable))updateHandler;
-
-- (void)logScreenTimeEventWithId:(NSString *)id name:(NSString *)name duration:(long)duration;
-
-- (nullable UIViewController *)oosReportViewController;
 
 #ifdef INTERNAL_USAGE
 - (void)setDevAuthTo:(BOOL)isDevAuth;
