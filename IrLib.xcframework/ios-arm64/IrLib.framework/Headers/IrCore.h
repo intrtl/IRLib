@@ -114,7 +114,6 @@ FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
 -(NSString *)frameworkVersion;
 -(BOOL)useInfinityBgState;
 -(void)useInfinityBg:(BOOL)use;
--(void)initAnalytics;
 -(void)doDebugCommand;
 -(NSString*)getVersion;
 -(void)startSendAndRecive;
