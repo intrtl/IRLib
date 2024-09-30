@@ -6,7 +6,7 @@
 	<dict>
 		<key>AppCenter.bundle/Info.plist</key>
 		<data>
-		7cqmUsu6U6EoZi0DGkP64S8PW8Q=
+		X9/doiZYyN5V3UclnsVVvYX8KMo=
 		</data>
 		<key>AppCenter.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>AppCenterAnalytics.bundle/Info.plist</key>
 		<data>
-		GH8bvWM4zOxi65Rgeb0nJPLX6ZY=
+		bvyPlMCA1b9yIKQpBVBsUSr2jeg=
 		</data>
 		<key>AppCenterAnalytics.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppCenterCrashes.bundle/Info.plist</key>
 		<data>
-		emIMVqh17FORWQ96v7NTz0sjriA=
+		eSvgSGzAPIieyHupsizKCJQC8/8=
 		</data>
 		<key>AppCenterCrashes.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KWCpUq5mboPvIF7O9xNhZyd1drs=
+		aUL88/dKRUXeCbxnUCVG+wMPMNM=
 		</data>
 		<key>LSLogViewer.nib</key>
 		<data>
@@ -131,7 +131,7 @@
 		</dict>
 		<key>realm_swift_privacy.bundle/Info.plist</key>
 		<data>
-		aArPhapF09EzclkKt6jxC4Gdz7M=
+		sBGwmO4l2BUBXpejfDPnNhUhDro=
 		</data>
 		<key>ru.lproj/LocalizationIR.strings</key>
 		<dict>
@@ -167,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4ZLDQBfvlZluVnmTPYFkQxE/gMLGJpjaH7eCRVWDa8M=
+			/k9Y2mF9xRoe7K5uJZhHUkpT+Ub4Oj7T3qSvhjtma+w=
 			</data>
 		</dict>
 		<key>AppCenter.bundle/PrivacyInfo.xcprivacy</key>
@@ -181,7 +181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EdN/dXwXGnmmiJcLG1vSH3tdATYx6nbPyubC2Pka0Q0=
+			F2ycPboju97GGO0tItBVaUbaZemqY8kxhfFS/1kmSMo=
 			</data>
 		</dict>
 		<key>AppCenterAnalytics.bundle/PrivacyInfo.xcprivacy</key>
@@ -195,7 +195,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8gjX14tM+qXIMvh2VicV6B096wWbYWywxNkZrE3B6nw=
+			VJcpuNf1DEQmG/dY/jcOcqyH2W6aNkES6I7vUxaEZiE=
 			</data>
 		</dict>
 		<key>AppCenterCrashes.bundle/PrivacyInfo.xcprivacy</key>
@@ -338,7 +338,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			udrMBaSpYSadS7drWYy+1+vSGfu6ZunI2PbPRwQID8s=
+			oBeJbAwbB6BmaxztM/gmZe63tEeTgkQ2D3uvUxafOTI=
 			</data>
 		</dict>
 		<key>ru.lproj/LocalizationIR.strings</key>
