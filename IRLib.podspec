@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "IRLib"
-  spec.version      = "5.12.1" 
+  spec.version      = "5.13.3" 
   spec.summary      = "Framework for IR functionality integration"
   spec.static_framework = true;
   spec.description  = <<-DESC
@@ -13,11 +13,11 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/intrtl/IRLib.git", :tag => "#{spec.version}" }
   spec.ios.vendored_frameworks = "IrLib.xcframework"
   spec.frameworks = "CoreMotion", "UserNotifications", "Combine"
-  spec.dependency "AppCenter", "~> 4.4.3"
+  spec.dependency "AppCenter", "~> 5.0.5"
   spec.dependency "OpenCV2", "~> 4.3.0"
   spec.dependency "BugfenderSDK", "2.0.0"
   spec.dependency "Amplitude", "~> 8.8.0"
   spec.dependency "IrLibSwift", "= #{spec.version}"
-  spec.dependency "Realm", "10.53.1-xcframework"
-  spec.dependency "RealmSwift", "10.53.1-xcframework"
+  spec.dependency "Realm", "10.54.1-xcframework"
+  spec.dependency "RealmSwift", "10.54.1-xcframework"
 end
