@@ -4,30 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AppCenter.bundle/Info.plist</key>
-		<data>
-		fEyz3lG6I13rZ6Fth8HarUJErEA=
-		</data>
-		<key>AppCenter.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		RGatnKWrZPnLawe1gWCHbu0IT/8=
-		</data>
-		<key>AppCenterAnalytics.bundle/Info.plist</key>
-		<data>
-		lM64C+oWDfxdWHlCEq6DEgq0s2I=
-		</data>
-		<key>AppCenterAnalytics.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		fA8jpoJLS2JgoGqXOmGrIeycIcg=
-		</data>
-		<key>AppCenterCrashes.bundle/Info.plist</key>
-		<data>
-		7qZ2le4njG4gEMFjRlSK9ZNX8YA=
-		</data>
-		<key>AppCenterCrashes.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		ZupvGMEVxL3kw1eYf28mEK40NMk=
-		</data>
 		<key>Assets.car</key>
 		<data>
 		CxRWpH0OVQUKjn0ngkOT8VzNjpU=
@@ -54,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2tymahEJP+GUROmSdob00mFcdWk=
+		epj4BcPGVOyQrKnWW9VpZtWRNvs=
 		</data>
 		<key>LSLogViewer.nib</key>
 		<data>
@@ -131,7 +107,7 @@
 		</dict>
 		<key>realm_swift_privacy.bundle/Info.plist</key>
 		<data>
-		V+gjQW/A4/NTfWUJT4vBdqRP+8o=
+		ryHhMD0r36l+WlDsaEpwc9BCUZI=
 		</data>
 		<key>ru.lproj/LocalizationIR.strings</key>
 		<dict>
@@ -163,48 +139,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AppCenter.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WDq+/zLuJ7jR45INekBeHf4Gxe7eWeyU5wjrxzWQFXs=
-			</data>
-		</dict>
-		<key>AppCenter.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dFgfSL94ASqWZdkX5gAD+RTvcK/u7kSgXEHLdo7zg/o=
-			</data>
-		</dict>
-		<key>AppCenterAnalytics.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			f8yhgdbmhSVB203iFMXq1A2RXRBg4eI/RkqroM1a/L8=
-			</data>
-		</dict>
-		<key>AppCenterAnalytics.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8WFD/hxz+Np3ZNS2JYaiVJPoxPOZXWhA38gatUV4J8s=
-			</data>
-		</dict>
-		<key>AppCenterCrashes.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tjPWVqe9XVShl/zT7vftfKT8i48/DplsEtzqlDPpC1o=
-			</data>
-		</dict>
-		<key>AppCenterCrashes.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Mhvjuut9WN6SW2OMmPfASyCpHqEJmIEYUT1JqRqphnM=
-			</data>
-		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
@@ -338,7 +272,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XSSailU7XKl2FjVYdi7nnO/3pqAVp2TQzzQzJhaheew=
+			nZYGWfFppG0q+/6zD3dhXm/OWhOzpwzfDMmqrXaQuUY=
 			</data>
 		</dict>
 		<key>ru.lproj/LocalizationIR.strings</key>
