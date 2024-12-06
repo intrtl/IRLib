@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "IRLib"
-  spec.version      = "5.13.3" 
+  spec.version      = "5.13.4" 
   spec.summary      = "Framework for IR functionality integration"
   spec.static_framework = true;
   spec.description  = <<-DESC
