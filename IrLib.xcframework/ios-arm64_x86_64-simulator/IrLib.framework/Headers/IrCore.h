@@ -117,7 +117,6 @@ FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
 -(void)doDebugCommand;
 -(NSString*)getVersion;
 -(void)startSendAndRecive;
--(long)getCurrentStoreId;
 
 #ifdef INTERNAL_USAGE
 - (void)setDevAuthTo:(BOOL)isDevAuth;

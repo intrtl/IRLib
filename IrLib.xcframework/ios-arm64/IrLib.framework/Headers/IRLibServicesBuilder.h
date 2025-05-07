@@ -16,9 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shared;
 
-+ (IRStoredStateSettings *)swiftLibStoredStateSettings;
-+ (IRDataManager *)swiftLibDataManager;
-
 - (IrCore *)irCore;
 - (IrCore *)irCoreWithSeparatedDB:(BOOL)isSeparated;
 

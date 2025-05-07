@@ -4,33 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AppCenter.bundle/Info.plist</key>
-		<data>
-		6CPywtd+3v9gSda4NiwHNqLmpI0=
-		</data>
-		<key>AppCenter.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		RGatnKWrZPnLawe1gWCHbu0IT/8=
-		</data>
-		<key>AppCenterAnalytics.bundle/Info.plist</key>
-		<data>
-		3lcDh0euxxNeoOrIGBXxtPGcsQ4=
-		</data>
-		<key>AppCenterAnalytics.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		fA8jpoJLS2JgoGqXOmGrIeycIcg=
-		</data>
-		<key>AppCenterCrashes.bundle/Info.plist</key>
-		<data>
-		wh5Fa/+fXa/AU+k6EJN3RO61aFI=
-		</data>
-		<key>AppCenterCrashes.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		ZupvGMEVxL3kw1eYf28mEK40NMk=
-		</data>
 		<key>Assets.car</key>
 		<data>
-		CxRWpH0OVQUKjn0ngkOT8VzNjpU=
+		T+2+wuGvpIifYPvhyIRmQ5d5UDk=
 		</data>
 		<key>Headers/AiletFeatureToggle.h</key>
 		<data>
@@ -38,11 +14,11 @@
 		</data>
 		<key>Headers/IRLibServicesBuilder.h</key>
 		<data>
-		8d12lQcz2lPk3kG40BhTb+E9T+w=
+		YSt2seElWXc0ek3BGoUSMM18qZU=
 		</data>
 		<key>Headers/IrCore.h</key>
 		<data>
-		T9cKNOw5n1evP72GhieH7q8pp44=
+		CDyxd6hTtsNJo58CcUWMedOAtIo=
 		</data>
 		<key>Headers/IrLib.h</key>
 		<data>
@@ -54,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RjsygTQfw04CWt1nZRpiC6+mnrc=
+		pLbqfQVE0iEBNPo4vRzsVoHYTwo=
 		</data>
 		<key>LSLogViewer.nib</key>
 		<data>
@@ -112,14 +88,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ic_arrows_anim_inverse_white.gif</key>
-		<data>
-		wE4ttAktPZutTNZsTEjMLFB/pEI=
-		</data>
-		<key>ic_arrows_anim_white.gif</key>
-		<data>
-		QarD7aP0SNnKpG/q2ZP8/J2a+GI=
-		</data>
 		<key>pt-PT.lproj/LocalizationIR.strings</key>
 		<dict>
 			<key>hash</key>
@@ -129,10 +97,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>realm_swift_privacy.bundle/Info.plist</key>
-		<data>
-		4H1awi4JYFE4u1SBgrUGbd6E7xQ=
-		</data>
 		<key>ru.lproj/LocalizationIR.strings</key>
 		<dict>
 			<key>hash</key>
@@ -163,53 +127,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AppCenter.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nrI91UiX+V5emxjR59b8sJWU4C1AZOzL/FgnnmB/jig=
-			</data>
-		</dict>
-		<key>AppCenter.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dFgfSL94ASqWZdkX5gAD+RTvcK/u7kSgXEHLdo7zg/o=
-			</data>
-		</dict>
-		<key>AppCenterAnalytics.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VfXvN4oSYsjI6PjwRPxs2NDg5PgfOI+zY3noGZ45PpE=
-			</data>
-		</dict>
-		<key>AppCenterAnalytics.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8WFD/hxz+Np3ZNS2JYaiVJPoxPOZXWhA38gatUV4J8s=
-			</data>
-		</dict>
-		<key>AppCenterCrashes.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZbANACzzkDULGV6vRa8L4ylZwzN7pjq2arWIiiY82jA=
-			</data>
-		</dict>
-		<key>AppCenterCrashes.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Mhvjuut9WN6SW2OMmPfASyCpHqEJmIEYUT1JqRqphnM=
-			</data>
-		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jSQz2UaHPn7JnZNCsZMom1/0NjzsWE/CZScfMJ3+p/U=
+			g+sGjCIBy67UQEjlKrok9AoofHJO81BrJqsCavKB3m0=
 			</data>
 		</dict>
 		<key>Headers/AiletFeatureToggle.h</key>
@@ -223,14 +145,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pQNOdL3U8HL+uALCkXsDx0lkDZXTpY3aPuwGudDNUYA=
+			M3tgzRaRHorTpG9kwaewXD5TlSBdCH9svwW6oU8ALmQ=
 			</data>
 		</dict>
 		<key>Headers/IrCore.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jEBRTAukC2ktQEKyETObBe4FKAwl+YeVb5cVAgFJCrA=
+			EBFgOGIq+jzPRHGCcVaCO+mIV12fQjawUuCbaiTJKGk=
 			</data>
 		</dict>
 		<key>Headers/IrLib.h</key>
@@ -311,20 +233,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ic_arrows_anim_inverse_white.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wca2Imv/RF8PF4+agGmeCPzTp1onx+CnyZThwRvNOQ8=
-			</data>
-		</dict>
-		<key>ic_arrows_anim_white.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wiT2QuMmTB+GLuHE8HZECpca8vTUcg3zXqEZocXlA24=
-			</data>
-		</dict>
 		<key>pt-PT.lproj/LocalizationIR.strings</key>
 		<dict>
 			<key>hash2</key>
@@ -333,13 +241,6 @@
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>realm_swift_privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LakTUf032N7Xy1V9X49IVp4v9/taNcxvXCYW/pAwrz4=
-			</data>
 		</dict>
 		<key>ru.lproj/LocalizationIR.strings</key>
 		<dict>
