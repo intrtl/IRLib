@@ -15,6 +15,17 @@
   target 'YourTarget' do
     pod 'IRLib'
   end
+  
+ post_install do |installer|
+ installer.pods_project.targets.each do |target|
+  if target.name == "GRDB.swift"
+   target.build_configurations.each do |config|
+    config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+   end
+  end
+ end
+end
+
 ```
 4. Skip this step you haven't embedded the framework previously without Cocoapods.
 Remove `IRLib.framework` from embedded libraries (xcode project settings -> 'General' tab), Embedded Frameworks and Link binary with libraries sections (xcode project settings -> 'Build Phases' tab). 
