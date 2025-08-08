@@ -17,8 +17,8 @@ Pod::Spec.new do |spec|
   spec.dependency "OpenCV2", "~> 4.3.0"
   spec.dependency "BugfenderSDK", "2.0.0"
   spec.dependency "Intercom", "15.2.3"
-  spec.dependency "Realm", "10.54.3-xcframework"
-  spec.dependency "RealmSwift", "10.54.3-xcframework"
+  spec.dependency "Realm", "10.54.5-xcframework"
+  spec.dependency "RealmSwift", "10.54.5-xcframework"
   spec.dependency "FirebaseAnalytics", "11.5.0"
   spec.dependency "FirebaseMessaging", '11.5.0'
   spec.dependency "FirebaseCrashlytics", '11.5.0'
