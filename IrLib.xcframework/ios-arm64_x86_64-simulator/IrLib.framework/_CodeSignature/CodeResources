@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C+vefdMZ/aP/mPm76rTLUfXwWNw=
+		YpIjxvOriGt5OtLBzepq7qJhdBk=
 		</data>
 		<key>LSLogViewer.nib</key>
 		<data>
@@ -97,10 +97,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>realm_swift_privacy.bundle/Info.plist</key>
-		<data>
-		0hn2ZeCIuSzxrS1XxA5v3qJrkro=
-		</data>
 		<key>ru.lproj/LocalizationIR.strings</key>
 		<dict>
 			<key>hash</key>
@@ -245,13 +241,6 @@
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>realm_swift_privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SWtE5h/Q6ECUSnzFpvXOcdBeiXiVjC4zhiCauL+Zax8=
-			</data>
 		</dict>
 		<key>ru.lproj/LocalizationIR.strings</key>
 		<dict>
