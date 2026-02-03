@@ -97,6 +97,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>realm_swift_privacy.bundle/Info.plist</key>
+		<data>
+		Z1mDfzRWafdqWi69g5TmdjlNPz0=
+		</data>
 		<key>ru.lproj/LocalizationIR.strings</key>
 		<dict>
 			<key>hash</key>
@@ -241,6 +245,13 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>realm_swift_privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EmfogzpyYTUcOifgKAhZ7pqDx4dmsDmMH04MsaZbQa8=
+			</data>
 		</dict>
 		<key>ru.lproj/LocalizationIR.strings</key>
 		<dict>
