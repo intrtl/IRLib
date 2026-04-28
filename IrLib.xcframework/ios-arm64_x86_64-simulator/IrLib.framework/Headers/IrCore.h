@@ -64,7 +64,7 @@ FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
      servicesBuilder:(IRLibServicesBuilder *)servicesBuilder;
 
 - (instancetype)init:(BOOL)isSeparated
-        dataManager:(id<IRDataManagerProtocol>)dataManager
+        dataManager:(id<IRDataManagerObjcProtocol>)dataManager
      servicesBuilder:(IRLibServicesBuilder *)servicesBuilder;
 
 #pragma mark - Instance methods
@@ -73,8 +73,6 @@ FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
 
 -(int)dbVersion;
 -(void)initLocalNotification;
--(void)startBg;
--(void)resetBg;
 
 // MARK: - Lib interaction methods
 
@@ -110,9 +108,7 @@ FOUNDATION_EXPORT int const AILET_VISIT_ERROR_LACK_OF_ASSORTMENT;
 
 -(long)sendUnsentDataIfNeeded;
 -(BOOL)isNeedSyncData;
--(void)startLocalNotification;
 -(NSString *)frameworkVersion;
--(BOOL)useInfinityBgState;
 -(void)useInfinityBg:(BOOL)use;
 -(void)doDebugCommand;
 -(NSString*)getVersion;

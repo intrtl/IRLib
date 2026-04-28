@@ -17,8 +17,6 @@ __attribute__((deprecated("Use IRInteractManager from IrLibSwift instead of this
 
 +(int)dbVersion __attribute__((deprecated("Use IRInteractManager `frameworkVersion` method from IrLibSwift instead of this class")));
 +(void)initLocalNotification;
-+(void)startBg;
-+(void)resetBg;
 
 +(long)init:(NSString*)user_name_
    password:(NSString*)user_password_
@@ -147,7 +145,6 @@ __attribute__((deprecated("Use IRInteractManager `syncData` method from IrLibSwi
 +(BOOL)isNeedSyncData;
 +(void)startLocalNotification;
 +(NSString *)frameworkVersion;
-+(void)useInfinityBg:(BOOL)use;
 +(void)initAnalytics;
 
 +(long)initLib:(NSString*)user_name_
@@ -193,8 +190,6 @@ __attribute__((deprecated("Use IRInteractManager `setup` method from IrLibSwift 
 
 + (long)setPortal:(nonnull NSString *)portalId
 __attribute__((deprecated("Use IRInteractManager `updateActivePortal` method from IrLibSwift instead of this class")));
-
-+(BOOL)useInfinityBgState;
 
 #ifdef INTERNAL_USAGE
 +(void)setDevAuthTo:(BOOL)isDevAuth;
