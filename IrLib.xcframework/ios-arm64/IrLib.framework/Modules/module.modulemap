@@ -4,3 +4,8 @@ framework module IrLib {
 
   module * { export * }
 }
+
+module IrLib.Swift {
+  header "IrLib-Swift.h"
+  requires objc
+}

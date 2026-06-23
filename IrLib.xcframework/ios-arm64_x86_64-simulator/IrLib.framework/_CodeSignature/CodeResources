@@ -20,6 +20,10 @@
 		<data>
 		QasdnSv6d8o10pn1BPNAYE8u6gU=
 		</data>
+		<key>Headers/IrLib-Swift.h</key>
+		<data>
+		k9ok4vnFoOd+4WGxHzfC1hl+r4Q=
+		</data>
 		<key>Headers/IrLib.h</key>
 		<data>
 		pEOiNnBKoaoUyUpkKgou6GQIHUM=
@@ -30,11 +34,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GBDwj1AnTfvN0wm4eBsy3ofeevU=
+		tG3eWGwzq7ZlqhUrLxpYK0iMsws=
+		</data>
+		<key>Modules/IrLib.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		OUIFhAkm3O7V8kC01aGawPd13xc=
+		</data>
+		<key>Modules/IrLib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		oDu32uK8CtJNtrRqEbAQpIlKV3c=
+		</data>
+		<key>Modules/IrLib.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		vYdn4/Dj8El660z7EYIevsVIn/g=
+		</data>
+		<key>Modules/IrLib.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		oDu32uK8CtJNtrRqEbAQpIlKV3c=
+		</data>
+		<key>Modules/IrLib.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		UTWuCUz+4gFWvOLog29fb9hhlE8=
+		</data>
+		<key>Modules/IrLib.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		OUIFhAkm3O7V8kC01aGawPd13xc=
+		</data>
+		<key>Modules/IrLib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		eqh3WtRE/MWnP0o2bHCLcNq8jnU=
+		</data>
+		<key>Modules/IrLib.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		G6ITIBEhFLQI5UqR5UlQ+GcRuiU=
+		</data>
+		<key>Modules/IrLib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		eqh3WtRE/MWnP0o2bHCLcNq8jnU=
+		</data>
+		<key>Modules/IrLib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		B7ydzQ85fZ39Aa6u/5CHJpjzrbE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		exeseT48X21adwXArmZTX2AEbY4=
+		5bdSgsatVkfSM0v+486DNDkDpGc=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -91,7 +135,7 @@
 		</dict>
 		<key>realm_swift_privacy.bundle/Info.plist</key>
 		<data>
-		NN4tplKXrIcQs3+dvvRzS0teVWI=
+		V+RCwKFgS1j66U4k2zfkTh9qbV8=
 		</data>
 		<key>ru.lproj/LocalizationIR.strings</key>
 		<dict>
@@ -151,6 +195,13 @@
 			5MFujhYwOq5Z8KPq5a/Se8t3UfwGlbzhKhWEWbA6pVw=
 			</data>
 		</dict>
+		<key>Headers/IrLib-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Dd5enHdiXtq3RA9AeWzKOMsUT6re0bZqIom/fIwI+i8=
+			</data>
+		</dict>
 		<key>Headers/IrLib.h</key>
 		<dict>
 			<key>hash2</key>
@@ -165,11 +216,81 @@
 			slXpJaQGczbGwU3ApbrBLOfyBROZs6UQ/siV6YfXQ6Q=
 			</data>
 		</dict>
+		<key>Modules/IrLib.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HLDtO7Zk0uDSaAWlZ4j2JjIIy+WOXgfGmLLPvzraUdc=
+			</data>
+		</dict>
+		<key>Modules/IrLib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mCzH0TyR4HR7UtxqsroM3oUFrrHGIayfBpBuqg5ai6E=
+			</data>
+		</dict>
+		<key>Modules/IrLib.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7MaZ+4afx9VkRyH+PHw96o21q7Kzq3foHHNaWLXuT2Q=
+			</data>
+		</dict>
+		<key>Modules/IrLib.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mCzH0TyR4HR7UtxqsroM3oUFrrHGIayfBpBuqg5ai6E=
+			</data>
+		</dict>
+		<key>Modules/IrLib.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WmNqcfWD2sPi57CaftK829n73kSqtuMj1xcIrghVHLM=
+			</data>
+		</dict>
+		<key>Modules/IrLib.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HLDtO7Zk0uDSaAWlZ4j2JjIIy+WOXgfGmLLPvzraUdc=
+			</data>
+		</dict>
+		<key>Modules/IrLib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l7iXPvMfDcU0rcSvK26ykJeThxgp1JtAkv4SwNgBkgM=
+			</data>
+		</dict>
+		<key>Modules/IrLib.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R88HqC4rZAt+Ue8yzIJQlUOPL8l4qhEvKSEuCW3gVyE=
+			</data>
+		</dict>
+		<key>Modules/IrLib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l7iXPvMfDcU0rcSvK26ykJeThxgp1JtAkv4SwNgBkgM=
+			</data>
+		</dict>
+		<key>Modules/IrLib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k8ySAFw04MUidaEGL/wekUMxKnRnh7dUEFWjb08Lue4=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qbIMt5VgZhN0uTmF6LearRqc5Tk6QqBEiajobSlbgh8=
+			L14tyUnSf/XfpoAwgpnmQqqA0kPRcxHrY+h4Ta46vGM=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -228,7 +349,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x1vkXcN1nN0pumxBlJGs7aWE7YdEmMIcag7gCsqZkPw=
+			hhn8KY9VF54/ag0PT5fusn5RWX+hfFNzZ5yEvxVBLig=
 			</data>
 		</dict>
 		<key>ru.lproj/LocalizationIR.strings</key>
