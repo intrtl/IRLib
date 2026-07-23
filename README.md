@@ -1,3 +1,7 @@
+## Attention
+Use new async API from the framework https://github.com/intrtl/IRLibSwift. 
+The IRLib framework exists only for legacy code users. 
+
 ## Installation via [Cocoapods](https://cocoapods.org) ##
 
 1. Add repo with Intelligence Retail specs and official Cocoapods specs into your project `Podfile` :
