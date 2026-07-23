@@ -1,6 +1,5 @@
 ## Attention
-Use new async API from the framework https://github.com/intrtl/IRLibSwift. 
-The IRLib framework exists only for legacy code users. 
+This is a **legacy framework** that exists only for backward compatibility with clients that still use it. For a better experience, you should use the **[IrLibSwift](https://github.com/intrtl/IRLibSwift)** framework, which provides an asynchronous API for proper interaction. See the documentation [HERE](https://github.com/intrtl/AiletLibraryExamples/blob/master/iOS/IrLibSwiftAsyncAPI/README.md).
 
 ## Installation via [Cocoapods](https://cocoapods.org) ##
 
